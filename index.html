@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sukses UTBK – H2 Solution</title>
+<style>
+:root{--navy:#1e3a5f;--navy-dark:#152b47;--slate:#3d5a80;--amber:#e8a33d;--paper:#f7f5f0;--paper-2:#eeebe3;--ink:#26313f;--ink-soft:#5a6a7a;--line:#d8d2c4;--white:#fff;--sel-bg:#eaf0f8;--seen-bg:#dfeadd;--seen-bd:#a9cba3;--seen-t:#2f5c3a;--cur-bg:#1e3a5f;--cur-t:#fff;--sidebar-w:290px;--header-h:64px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--slate:#8fb0dc;--paper:#1d2b46;--paper-2:#0e1728;--ink:#e6ecf5;--ink-soft:#9aabc4;--line:#2c3d5e;--white:#15213a;--sel-bg:#223557;--seen-bg:#1d3a2c;--seen-bd:#2f6a4a;--seen-t:#bfe6cf;--cur-bg:#e8a33d;--cur-t:#152b47}}
+:root[data-theme="dark"]{color-scheme:dark;--slate:#8fb0dc;--paper:#1d2b46;--paper-2:#0e1728;--ink:#e6ecf5;--ink-soft:#9aabc4;--line:#2c3d5e;--white:#15213a;--sel-bg:#223557;--seen-bg:#1d3a2c;--seen-bd:#2f6a4a;--seen-t:#bfe6cf;--cur-bg:#e8a33d;--cur-t:#152b47}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:"Segoe UI",Verdana,Tahoma,sans-serif;background:var(--paper-2);color:var(--ink);overflow:hidden}
+button{font-family:inherit;cursor:pointer}
+button:focus-visible,.opt:focus-within{outline:3px solid var(--amber);outline-offset:2px}
+#app{display:flex;flex-direction:column;height:100%}
+
+/* Layer atas */
+#header{height:var(--header-h);flex:none;background:linear-gradient(135deg,var(--navy),var(--navy-dark));color:#fff;display:flex;align-items:center;gap:12px;padding:0 16px;box-shadow:0 2px 8px rgba(0,0,0,.2);z-index:20;border-bottom:3px solid var(--amber)}
+.hbtn{flex:none;width:40px;height:40px;border-radius:8px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:18px;display:grid;place-items:center}
+.hbtn:hover{background:rgba(255,255,255,.2)}
+#header-text{flex:1;min-width:0}
+#header-text h1{font-size:16px;margin:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#header-text p{margin:2px 0 0;font-size:12px;color:#c7d3e0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+#body-wrap{flex:1;display:flex;min-height:0;position:relative}
+
+/* Layer kiri */
+#sidebar{width:var(--sidebar-w);flex:0 0 var(--sidebar-w);background:var(--white);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0;transition:margin-left .25s ease;z-index:15}
+#body-wrap.sidebar-hidden #sidebar{margin-left:calc(-1 * var(--sidebar-w))}
+#sidebar-inner{flex:1;overflow-y:auto;padding:14px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:11px;color:var(--ink-soft);margin-bottom:10px}
+.legend span{display:flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.tools{display:flex;gap:6px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.tool{flex:1;background:none;border:1px solid var(--line);color:var(--ink-soft);border-radius:7px;font-size:12px;padding:5px 8px}
+.tool:hover{background:var(--paper);color:var(--ink)}
+.sec-title{font-size:11px;font-weight:700;color:var(--slate);letter-spacing:.4px;margin:16px 0 6px}
+.sec-title:first-child{margin-top:0}
+.subj{margin-bottom:8px}
+.subj-head{width:100%;display:flex;align-items:center;gap:8px;text-align:left;background:var(--paper);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:9px 11px;font-size:13.5px;font-weight:700}
+.subj-head:hover{border-color:var(--amber)}
+.chev{width:15px;height:15px;flex:none;color:var(--ink-soft);transition:transform .18s}
+.subj.open .chev{transform:rotate(90deg)}
+.nav-grid{display:none;grid-template-columns:repeat(3,1fr);gap:6px;padding:8px 2px 4px}
+.subj.open .nav-grid{display:grid}
+.nav-btn{border-radius:7px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font-size:12.5px;font-weight:600;padding:9px 2px;transition:.15s}
+.nav-btn:hover{border-color:var(--amber)}
+.nav-btn.seen{background:var(--seen-bg);border-color:var(--seen-bd);color:var(--seen-t)}
+.nav-btn.current{background:var(--cur-bg);color:var(--cur-t);border-color:var(--amber);box-shadow:0 0 0 2px rgba(232,163,61,.35)}
+#backdrop{display:none;position:fixed;inset:0;background:rgba(20,25,35,.4);z-index:14}
+#body-wrap.mobile-open #backdrop{display:block}
+
+/* Layer kanan */
+#main{flex:1;min-width:0;display:flex;flex-direction:column;min-height:0}
+#main-scroll{flex:1;overflow-y:auto;padding:22px clamp(16px,3vw,40px) 40px}
+.card{max-width:1180px;margin:0 auto;background:var(--white);border-radius:14px;border:1px solid var(--line);box-shadow:0 1px 3px rgba(30,58,95,.08);padding:26px clamp(16px,3vw,40px)}
+#body-wrap.sidebar-hidden .card{max-width:1480px}
+.timer{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;font-weight:700;font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.q-top{display:flex;align-items:center;gap:12px;padding-bottom:16px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+.q-top .q-title{margin:0;flex:1}
+.q-count{margin-left:auto;font-size:14px;font-weight:600;color:var(--ink-soft);white-space:nowrap}
+.q-body{display:flex;gap:30px;align-items:flex-start}
+.q-main{flex:1;min-width:0}
+.rail{width:300px;flex:none;border-left:1px solid var(--line);padding-left:24px;display:flex;flex-direction:column}
+.rail-t{font-size:15px;font-weight:700;margin-bottom:12px}
+.rail{position:sticky;top:0;max-height:calc(100vh - 230px);overflow-y:auto;padding-right:6px}
+.nav-q{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.nb{height:44px;border-radius:8px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);font-size:14px;font-weight:600;position:relative}
+.nb:hover{border-color:var(--amber)}
+.nb.done{background:#3d5a80;border-color:#3d5a80;color:#fff}
+.nb.flag{border-color:#c9822a;border-width:2px}
+.nb.flag::after{content:"";position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:#c9822a}
+.nb.cur{background:#e8a33d;border-color:#c9822a;color:#152b47;box-shadow:0 0 0 3px rgba(232,163,61,.45)}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;font-size:12.5px;color:var(--ink-soft);margin-top:16px}
+.lg span{display:flex;align-items:center;gap:6px}
+.lg i{width:12px;height:12px;border-radius:3px;box-sizing:border-box;flex:none}
+.fin{margin-top:20px;width:100%;background:#2f7a4f;color:#fff;padding:13px;font-size:15px}
+.flag-l{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;cursor:pointer}
+.flag-l input{width:18px;height:18px;accent-color:#c9822a}
+#ov{position:fixed;inset:0;background:rgba(10,15,25,.55);display:grid;place-items:center;z-index:50;padding:16px}
+#ov[hidden]{display:none}
+#ov-b{background:var(--white);border-radius:14px;max-width:420px;width:100%;padding:24px}
+#ov-b h3{margin:0 0 10px;font-size:20px}
+#ov-b p{margin:0 0 12px;line-height:1.6}
+#ov-b .note{font-size:13px;color:var(--ink-soft)}
+@media (max-width:980px){.q-body{flex-direction:column}.rail{width:100%;border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:18px;position:static;max-height:none;overflow:visible}}
+.q-badge{font-size:12px;font-weight:700;padding:4px 11px;border-radius:20px;background:var(--cur-bg);color:var(--cur-t)}
+.q-title{margin:0 0 18px;font-size:clamp(20px,2.4vw,28px);color:var(--ink)}
+.q-stimulus{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--slate);border-radius:8px;padding:16px 18px;margin-bottom:16px;font-size:15px;line-height:1.7;color:var(--ink-soft);min-height:110px;white-space:pre-line}
+.q-text{font-size:clamp(16px,1.5vw,19px);line-height:1.85;margin-bottom:20px;white-space:pre-line}
+.q-warn{background:#fff4dd;border:1px solid #e8c37a;color:#5c4210;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:14px;line-height:1.6}
+:root[data-theme="dark"] .q-warn{background:#3a2e12;border-color:#7a6126;color:#f1dba6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .q-warn{background:#3a2e12;border-color:#7a6126;color:#f1dba6}}
+.opt-list{display:flex;flex-direction:column;gap:9px}
+.opt{display:flex;align-items:flex-start;gap:12px;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--paper);cursor:pointer}
+.opt:hover{border-color:var(--amber)}
+.opt.selected{border-color:var(--slate);background:var(--sel-bg)}
+.opt{position:relative;font-size:17px;line-height:1.6}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt b{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--slate);color:var(--slate);display:grid;place-items:center;font-size:13px;flex:none}
+.opt.selected b{background:var(--slate);color:var(--cur-t)}
+
+#footer-nav{flex:none;display:flex;gap:10px;align-items:center;padding:12px clamp(16px,3vw,40px);background:var(--white);border-top:1px solid var(--line)}
+#footer-nav .spacer{flex:1}
+.btn{border:0;border-radius:9px;padding:11px 20px;font-size:14px;font-weight:700}
+.btn-ghost{background:var(--white);color:var(--ink);border:1.5px solid var(--slate)}
+.btn-primary{background:var(--cur-bg);color:var(--cur-t)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+
+@media (max-width:860px){:root{--sidebar-w:260px}#header-text p{display:none}}
+@media (max-width:680px){
+ #sidebar{position:fixed;top:calc(var(--header-h) + env(safe-area-inset-top,0px));bottom:0;left:0;box-shadow:6px 0 24px rgba(0,0,0,.18)}
+ .card{padding:18px 16px}
+}
+@media (prefers-reduced-motion:reduce){#sidebar,.chev{transition:none}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="header">
+    <button class="hbtn" id="hamburger" aria-label="Sembunyikan atau tampilkan daftar ujian" title="Tampilkan/sembunyikan daftar ujian">☰</button>
+    <div id="header-text"><h1 id="hdr-title"></h1><p id="hdr-sub"></p></div>
+    <div class="timer" id="timer"></div>
+    <button class="hbtn" id="theme" aria-label="Ganti tema terang atau gelap" title="Ganti tema">◐</button>
+  </div>
+  <div id="body-wrap">
+    <div id="backdrop"></div>
+    <div id="sidebar">
+      <div id="sidebar-inner">
+        <div class="legend">
+          <span><i style="background:var(--paper);border:1.5px solid var(--line)"></i>Belum dibuka</span>
+          <span><i style="background:var(--seen-bg);border:1.5px solid var(--seen-bd)"></i>Sudah dibuka</span>
+          <span><i style="background:var(--cur-bg)"></i>Sedang dibuka</span>
+        </div>
+        <div class="tools"><button class="tool" id="openAll">Buka semua</button><button class="tool" id="closeAll">Tutup semua</button></div>
+        <div id="navgrid-group"></div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="main-scroll"><div class="card" id="question-card"></div></div>
+      <div id="footer-nav">
+        <button class="btn btn-ghost" id="btn-prev">← Sebelumnya</button>
+        <div class="spacer"></div>
+        <label class="flag-l"><input type="checkbox" id="flag">Tandai ragu-ragu</label>
+        <div class="spacer"></div>
+        <button class="btn btn-primary" id="btn-next">Berikutnya →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="ov" hidden><div id="ov-b" role="dialog" aria-modal="true"></div></div>
+
+<script>
+/* =====================================================================
+   PENGATURAN UTAMA
+   ---------------------------------------------------------------------
+   1. Soal disimpan di folder  soal/  dengan nama  <KODE>-<NOMOR>.json
+      contoh: soal/PU-1.json, soal/PPU-8.json, soal/PBM-8.json, soal/TO-1.json
+   2. Jumlah tombol menu di layer kiri diatur lewat  soal/daftar.json
+      (tidak perlu mengubah HTML). Contoh isi:
+        {"PU":8,"PPU":8,"PBM":8,"PK":6,"LBIND":6,"LBING":6,"PM":6,"TO":3}
+      Kalau daftar.json tidak ada, dipakai angka "n" bawaan di GROUPS di bawah.
+   3. Jumlah soal per paket otomatis mengikuti isi file JSON-nya.
+   ===================================================================== */
+var TEST_TITLE="TRYOUT UTBK - SNBT H2 SOLUTION";
+var SOAL_DIR="soal/";          // folder soal di repo
+var NQ=30;                     // jumlah soal sementara sebelum JSON terbaca
+var DURATION=90*60;            // waktu mata ujian biasa (detik)
+var TO_DURATION=180*60;        // waktu SUPER TRYOUT (detik)
+var TO_JUMLAH=155;             // jumlah soal sementara untuk paket TO
+
+var GROUPS=[
+ {title:"TES POTENSI SKOLASTIK (TPS)",tag:"TPS",subjects:[
+   {title:"Penalaran Umum (PU)",code:"PU",n:7},
+   {title:"Pengetahuan & Pemahaman Umum (PPU)",code:"PPU",n:6},
+   {title:"Pemahaman Bacaan & Menulis (PBM)",code:"PBM",n:6},
+   {title:"Pengetahuan Kuantitatif (PK)",code:"PK",n:6}]},
+ {title:"LITERASI",tag:"Literasi",subjects:[
+   {title:"Literasi Bahasa Indonesia",code:"LBIND",n:6},
+   {title:"Literasi Bahasa Inggris",code:"LBING",n:6}]},
+ {title:"",tag:"PM",subjects:[
+   {title:"Penalaran Matematika (PM)",code:"PM",n:6}]},
+ {title:"SUPER TRYOUT",tag:"SUPER TRYOUT",subjects:[
+   {title:"Super Tryout Solution (STS)",code:"TO",n:3,gabungan:true}]}
+];
+
+var CHEV='<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4l6 6-6 6"/></svg>';
+var $=function(s){return document.querySelector(s)};
+var body=$('#body-wrap'),side=$('#navgrid-group'),card=$('#question-card');
+var items=[],cur=-1;
+var LET=['A','B','C','D','E'],st={},SOAL={},ERR={};
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function isMobile(){return window.innerWidth<=680}
+
+/* ---------- Membangun menu kiri ---------- */
+function buildMenu(cfg){
+  side.innerHTML='';items=[];
+  GROUPS.forEach(function(g){
+    var sec=el('div','nav-section');
+    if(g.title)sec.appendChild(el('div','sec-title',esc(g.title)));
+    g.subjects.forEach(function(s){
+      var jml=parseInt(cfg[s.code],10);
+      if(!(jml>=0))jml=s.n;
+      var box=el('div','subj open'),head=el('button','subj-head',CHEV+'<span>'+esc(s.title)+'</span>'),grid=el('div','nav-grid');
+      head.setAttribute('aria-expanded','true');
+      head.onclick=function(){head.setAttribute('aria-expanded',box.classList.toggle('open'))};
+      for(var n=1;n<=jml;n++)(function(label){
+        var b=el('button','nav-btn',label),i=items.length;
+        items.push({label:label,s:s,g:g,btn:b,total:s.gabungan?TO_JUMLAH:0,to:!!s.gabungan});
+        b.onclick=function(){go(i)};
+        grid.appendChild(b);
+      })(s.code+'-'+n);
+      box.appendChild(head);box.appendChild(grid);sec.appendChild(box);
+    });
+    side.appendChild(sec);
+  });
+}
+
+/* ---------- Memuat soal dari file JSON ---------- */
+function loadSoal(it){
+  var k=it.label;
+  if(SOAL[k]!==undefined||ERR[k])return Promise.resolve();
+  return fetch(SOAL_DIR+encodeURIComponent(k)+'.json',{cache:'no-cache'})
+    .then(function(r){if(!r.ok)throw 'missing';return r.json()})
+    .then(function(d){
+      if(!Array.isArray(d)||!d.length)throw 'format';
+      SOAL[k]=d;it.total=d.length;
+    })
+    .catch(function(e){ERR[k]=(e==='missing')?'missing':'format'});
+}
+
+function S(it){var k=it.label;return st[k]||(st[k]={i:0,a:[],f:[]})}
+function nq(it){return it.total||(it.to?TO_JUMLAH:NQ)}
+function Q(it,n){
+  var k=it.label,d=(SOAL[k]||[])[n];
+  if(d&&Array.isArray(d.o))return d;
+  var w=k+' no. '+(n+1),info,e=ERR[k];
+  if(SOAL[k]===undefined&&!e)info='Memuat soal…';
+  else if(location.protocol==='file:')info='Halaman dibuka dari komputer (file://), sehingga file soal tidak bisa dimuat. Buka lewat alamat GitHub Pages.';
+  else if(e==='missing')info='Soal '+k+' belum tersedia. Unggah file '+SOAL_DIR+k+'.json ke repository.';
+  else if(e==='format')info='File '+SOAL_DIR+k+'.json tidak valid. Pastikan isinya berupa array soal dan tidak ada tanda koma yang salah.';
+  else info='Soal nomor '+(n+1)+' tidak ditemukan di file '+k+'.json.';
+  return{warn:info,s:'',t:'Teks soal '+w+' ditampilkan di sini.',o:LET.map(function(x){return 'Pilihan jawaban '+x})}
+}
+function count(it,s){var N=nq(it),d=0,f=0;for(var n=0;n<N;n++){if(s.a[n])d++;if(s.f[n])f++}return{d:d,f:f,b:N-d}}
+function paint(){
+  var it=items[cur],s=S(it),c=count(it,s);
+  [].forEach.call(card.querySelectorAll('.nb'),function(b){var n=+b.dataset.n;b.className='nb'+(s.a[n]?' done':'')+(s.f[n]?' flag':'')+(n===s.i?' cur':'')});
+  $('#cD').textContent=c.d;$('#cF').textContent=c.f;$('#cB').textContent=c.b;
+  $('#flag').checked=!!s.f[s.i];
+  $('#btn-prev').disabled=s.i===0;$('#btn-next').disabled=s.i===nq(it)-1;
+}
+function nbtn(n){return '<button class="nb" data-n="'+n+'" aria-label="Soal '+(n+1)+'">'+(n+1)+'</button>'}
+function render(){
+  var it=items[cur],s=S(it),N=nq(it);
+  if(s.i>=N)s.i=N-1;
+  var q=Q(it,s.i),nb='',j;
+  nb='<div class="nav-q">';for(j=0;j<N;j++)nb+=nbtn(j);nb+='</div>';
+  var opts=q.o.map(function(t,k){var L=LET[k],on=s.a[s.i]===L;return '<label class="opt'+(on?' selected':'')+'"><input type="radio" name="o" value="'+L+'"'+(on?' checked':'')+'><b>'+L+'</b><span>'+esc(t)+'</span></label>'}).join('');
+  var ttl=it.s.title+' – '+it.label;
+  card.innerHTML='<div class="q-top"><span class="q-badge">'+esc(it.label)+'</span>'+(it.to?'':'<h2 class="q-title">'+esc(ttl)+'</h2>')+'<span class="q-count">Soal '+(s.i+1)+' dari '+N+'</span></div>'
+   +'<div class="q-body"><div class="q-main">'+(q.warn?'<div class="q-warn">'+esc(q.warn)+'</div>':'')+(q.s?'<div class="q-stimulus">'+esc(q.s)+'</div>':'')+'<div class="q-text">'+esc(q.t)+'</div><div class="opt-list">'+opts+'</div></div>'
+   +'<div class="rail"><div class="rail-t">Navigasi soal</div>'+nb
+   +'<div class="lg"><span><i style="background:#3d5a80"></i>Terjawab <b id="cD"></b></span><span><i style="background:#e8a33d"></i>Sedang dibuka</span><span><i style="border:2px solid #c9822a"></i>Ragu-ragu <b id="cF"></b></span><span><i style="border:1.5px solid var(--ink-soft)"></i>Belum <b id="cB"></b></span></div>'
+   +'<button class="btn fin" id="fin">Selesai &amp; kirim jawaban</button></div></div>';
+  paint();
+  $('#main-scroll').scrollTop=0;
+}
+function go(i){
+  cur=i;var it=items[i];
+  items.forEach(function(x,k){x.btn.classList.toggle('current',k===i)});
+  it.btn.classList.add('seen');
+  var box=it.btn.closest('.subj');box.classList.add('open');box.querySelector('.subj-head').setAttribute('aria-expanded','true');
+  $('#hdr-sub').textContent=it.label+' · '+(it.to?'Super Tryout':it.s.title);
+  render();showT();
+  loadSoal(it).then(function(){if(cur===i)render()});
+  if(isMobile())closeMobile();
+}
+card.addEventListener('click',function(e){
+  var b=e.target.closest('.nb');
+  if(b){S(items[cur]).i=+b.dataset.n;render();return}
+  if(e.target.closest('#fin'))openSum();
+});
+card.addEventListener('change',function(e){
+  if(e.target.name!=='o')return;
+  var s=S(items[cur]);s.a[s.i]=e.target.value;
+  [].forEach.call(card.querySelectorAll('.opt'),function(o){o.classList.toggle('selected',o.querySelector('input').checked)});
+  paint();
+});
+$('#flag').onchange=function(){var s=S(items[cur]);s.f[s.i]=this.checked;paint()};
+$('#btn-prev').onclick=function(){var s=S(items[cur]);if(s.i>0){s.i--;render()}};
+$('#btn-next').onclick=function(){var it=items[cur],s=S(it);if(s.i<nq(it)-1){s.i++;render()}};
+function openSum(){
+  var it=items[cur],c=count(it,S(it));
+  $('#ov-b').innerHTML='<h3>Ringkasan '+esc(it.label)+'</h3><p>Terjawab <b>'+c.d+'</b> · Ragu-ragu <b>'+c.f+'</b> · Belum dijawab <b>'+c.b+'</b></p><p class="note">Pengiriman jawaban ke server belum dihubungkan.</p><button class="btn btn-primary" id="ov-x">Kembali mengerjakan</button>';
+  $('#ov').hidden=false;$('#ov-x').focus();
+}
+$('#ov').addEventListener('click',function(e){if(e.target.id==='ov'||e.target.id==='ov-x')this.hidden=true});
+var lefts={};
+function showT(){var it=items[cur];if(!it)return;var k=it.label;if(lefts[k]==null)lefts[k]=it.to?TO_DURATION:DURATION;var l=lefts[k],h=Math.floor(l/3600),m=Math.floor(l%3600/60),x=l%60;$('#timer').textContent='Sisa waktu '+[h,m,x].map(function(v){return('0'+v).slice(-2)}).join(':')}
+function tickT(){var it=items[cur];if(it&&lefts[it.label]>0)lefts[it.label]--;showT()}
+setInterval(tickT,1000);
+
+var hiddenDesktop=false;
+function closeMobile(){body.classList.remove('mobile-open');body.classList.add('sidebar-hidden')}
+$('#hamburger').onclick=function(){
+  if(isMobile()){var open=!body.classList.contains('mobile-open');body.classList.toggle('mobile-open',open);body.classList.toggle('sidebar-hidden',!open)}
+  else{hiddenDesktop=!hiddenDesktop;body.classList.toggle('sidebar-hidden',hiddenDesktop)}
+};
+$('#backdrop').onclick=closeMobile;
+$('#openAll').onclick=function(){[].forEach.call(document.querySelectorAll('.subj'),function(b){b.classList.add('open');b.firstChild.setAttribute('aria-expanded','true')})};
+$('#closeAll').onclick=function(){[].forEach.call(document.querySelectorAll('.subj'),function(b){b.classList.remove('open');b.firstChild.setAttribute('aria-expanded','false')})};
+$('#theme').onclick=function(){
+  var r=document.documentElement,d=r.getAttribute('data-theme');
+  var dark=d?d==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  r.setAttribute('data-theme',dark?'light':'dark');
+};
+
+/* ---------- Mulai: baca daftar.json (jika ada), bangun menu, buka soal pertama ---------- */
+$('#hdr-title').textContent=TEST_TITLE;
+if(isMobile())body.classList.add('sidebar-hidden');
+fetch(SOAL_DIR+'daftar.json',{cache:'no-cache'})
+  .then(function(r){return r.ok?r.json():{}})
+  .catch(function(){return {}})
+  .then(function(cfg){
+    buildMenu(cfg&&typeof cfg==='object'?cfg:{});
+    if(items.length)go(0);
+    if(isMobile())body.classList.add('sidebar-hidden');
+  });
+</script>
+</body>
+</html>
