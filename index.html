@@ -93,6 +93,16 @@ button:focus-visible,.opt:focus-within{outline:3px solid var(--amber);outline-of
 .q-warn{background:#fff4dd;border:1px solid #e8c37a;color:#5c4210;border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:14px;line-height:1.6}
 :root[data-theme="dark"] .q-warn{background:#3a2e12;border-color:#7a6126;color:#f1dba6}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .q-warn{background:#3a2e12;border-color:#7a6126;color:#f1dba6}}
+.q-stimulus.rich{white-space:normal}
+.q-stimulus h4{margin:0 0 10px;font-size:15px;color:var(--ink)}
+.q-stimulus p{margin:0 0 10px}
+.q-stimulus p:last-child{margin-bottom:0}
+.tbl-wrap{margin:12px 0;overflow-x:auto}
+.tbl-t{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.q-stimulus table{border-collapse:collapse;width:100%;font-size:14px;background:var(--white)}
+.q-stimulus th,.q-stimulus td{border:1px solid var(--line);padding:7px 10px;text-align:center;color:var(--ink)}
+.q-stimulus th{background:var(--paper-2);font-weight:700}
+.q-img{max-width:100%;height:auto;display:block;margin:12px auto;border-radius:6px}
 .opt-list{display:flex;flex-direction:column;gap:9px}
 .opt{display:flex;align-items:flex-start;gap:12px;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--paper);cursor:pointer}
 .opt:hover{border-color:var(--amber)}
@@ -220,6 +230,46 @@ function buildMenu(cfg){
   });
 }
 
+/* ---------- Membaca format JSON soal ----------
+   Format A (sederhana): [ {s:"bacaan", t:"pertanyaan", o:["A","B","C","D","E"]}, ... ]
+   Format B (lengkap)  : { reading_texts:[...], questions:[{number,text,options:{A..E},...}] }
+   Pada format B, teks bacaan otomatis dipasangkan ke soal lewat rentang nomor
+   di "description" (mis. "nomor soal 1 sampai dengan 10"). Kunci jawaban dan
+   pembahasan tidak ditampilkan kepada siswa. */
+function escA(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+function rtHtml(r){
+  var h='',tb=r.tables||[];
+  if(r.title)h+='<h4>'+esc(r.title)+'</h4>';
+  (r.content_paragraphs||[]).forEach(function(p){h+='<p>'+esc(p)+'</p>'});
+  tb.forEach(function(t){
+    h+='<div class="tbl-wrap">'+(t.title?'<div class="tbl-t">'+esc(t.title)+'</div>':'')
+      +'<table><thead><tr>'+(t.headers||[]).map(function(x){return '<th>'+esc(x)+'</th>'}).join('')+'</tr></thead><tbody>'
+      +(t.rows||[]).map(function(rw){return '<tr>'+rw.map(function(c){return '<td>'+esc(c)+'</td>'}).join('')+'</tr>'}).join('')
+      +'</tbody></table></div>';
+  });
+  if(!tb.length)(r.media||[]).forEach(function(m){
+    if(m&&/^(https?:\/\/|[\w\/.\-]+$)/.test(m.url||''))
+      h+='<img class="q-img" src="'+escA(m.url)+'" alt="'+escA(m.description||'')+'" onerror="this.style.display=\'none\'">';
+  });
+  (r.content_paragraphs_continuation||[]).forEach(function(p){h+='<p>'+esc(p)+'</p>'});
+  return h;
+}
+function norm(d){
+  if(Array.isArray(d))return d;
+  if(!d||!Array.isArray(d.questions))return null;
+  var rt=Array.isArray(d.reading_texts)?d.reading_texts:[];
+  var spans=rt.map(function(r){
+    var m=/(\d+)\s*(?:sampai(?:\s*dengan)?|s\.?d\.?|-|–)\s*(\d+)/i.exec(r.description||'');
+    return m?[+m[1],+m[2]]:null;
+  });
+  return d.questions.map(function(q,i){
+    var no=q.number||i+1,sh='',j,o=q.options||q.o;
+    for(j=0;j<rt.length;j++)if(spans[j]&&no>=spans[j][0]&&no<=spans[j][1]){sh=rtHtml(rt[j]);break}
+    if(!Array.isArray(o))o=LET.map(function(L){return o&&o[L]!=null?o[L]:''}).filter(function(x){return x!==''});
+    return{s:'',sh:sh,t:q.text||q.t||'',o:o};
+  });
+}
+
 /* ---------- Memuat soal dari file JSON ---------- */
 function loadSoal(it){
   var k=it.label;
@@ -227,8 +277,9 @@ function loadSoal(it){
   return fetch(SOAL_DIR+encodeURIComponent(k)+'.json',{cache:'no-cache'})
     .then(function(r){if(!r.ok)throw 'missing';return r.json()})
     .then(function(d){
-      if(!Array.isArray(d)||!d.length)throw 'format';
-      SOAL[k]=d;it.total=d.length;
+      var a=norm(d);
+      if(!a||!a.length)throw 'format';
+      SOAL[k]=a;it.total=a.length;
     })
     .catch(function(e){ERR[k]=(e==='missing')?'missing':'format'});
 }
@@ -263,7 +314,7 @@ function render(){
   var opts=q.o.map(function(t,k){var L=LET[k],on=s.a[s.i]===L;return '<label class="opt'+(on?' selected':'')+'"><input type="radio" name="o" value="'+L+'"'+(on?' checked':'')+'><b>'+L+'</b><span>'+esc(t)+'</span></label>'}).join('');
   var ttl=it.s.title+' – '+it.label;
   card.innerHTML='<div class="q-top"><span class="q-badge">'+esc(it.label)+'</span>'+(it.to?'':'<h2 class="q-title">'+esc(ttl)+'</h2>')+'<span class="q-count">Soal '+(s.i+1)+' dari '+N+'</span></div>'
-   +'<div class="q-body"><div class="q-main">'+(q.warn?'<div class="q-warn">'+esc(q.warn)+'</div>':'')+(q.s?'<div class="q-stimulus">'+esc(q.s)+'</div>':'')+'<div class="q-text">'+esc(q.t)+'</div><div class="opt-list">'+opts+'</div></div>'
+   +'<div class="q-body"><div class="q-main">'+(q.warn?'<div class="q-warn">'+esc(q.warn)+'</div>':'')+(q.sh?'<div class="q-stimulus rich">'+q.sh+'</div>':(q.s?'<div class="q-stimulus">'+esc(q.s)+'</div>':''))+'<div class="q-text">'+esc(q.t)+'</div><div class="opt-list">'+opts+'</div></div>'
    +'<div class="rail"><div class="rail-t">Navigasi soal</div>'+nb
    +'<div class="lg"><span><i style="background:#3d5a80"></i>Terjawab <b id="cD"></b></span><span><i style="background:#e8a33d"></i>Sedang dibuka</span><span><i style="border:2px solid #c9822a"></i>Ragu-ragu <b id="cF"></b></span><span><i style="border:1.5px solid var(--ink-soft)"></i>Belum <b id="cB"></b></span></div>'
    +'<button class="btn fin" id="fin">Selesai &amp; kirim jawaban</button></div></div>';
