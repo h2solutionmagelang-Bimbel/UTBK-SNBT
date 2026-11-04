@@ -1,1 +1,1 @@
-# UTBK---SNBT
+# UTBK-SNBT
