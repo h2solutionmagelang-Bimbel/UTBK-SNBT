@@ -1,0 +1,278 @@
+{
+  "title": "PAKET 1 SOAL TPS UTBK SBMPTN - PENALARAN UMUM (30 SOAL)",
+  "kunci": {
+    "1": {
+      "jawaban": "D",
+      "jawaban_teks": "Peningkatan laju pertumbuhan investasi lebih cepat dibandingkan dengan laju pertumbuhan ekonomi dari tahun ke tahun.",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: pernyataan yang paling cocok dengan isi tabel.\nCara mengerjakan:\n1) Lihat kolom Pertumbuhan Investasi: dari 9,3% (tahun 2008) naik menjadi 15,9% (tahun 2012). Kenaikannya 15,9 − 9,3 = 6,6.\n2) Lihat kolom Pertumbuhan Ekonomi: dari 6,2% naik menjadi 8,0%. Kenaikannya 8,0 − 6,2 = 1,8.\n3) Bandingkan: 6,6 jauh lebih besar daripada 1,8. Artinya investasi naik lebih cepat daripada ekonomi.\nJadi jawabannya D.\nKenapa pilihan lain kurang tepat:\n- A: kenaikan investasi tiap tahun tidak sama (+1,1; +1,3; +1,6; +2,6), jadi tidak konstan.\n- B: ekonomi tidak naik-turun, tetapi naik terus.\n- C: kebalikan dari jawaban D.\n- E: ekonomi hanya naik 1,8 poin dalam 4 tahun, jadi belum pantas disebut \"sangat tajam\".",
+      "trik": "Hitung kenaikan dari tahun awal ke tahun akhir untuk tiap kolom, lalu bandingkan angkanya.",
+      "submateri": "Membaca data tabel"
+    },
+    "2": {
+      "jawaban": "E",
+      "jawaban_teks": "Rata-rata pertumbuhan investasi dan ekonomi pada periode tahun 2008–2010 berada pada persentase di bawah 10%.",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: pernyataan yang BENAR menurut tabel.\nCara mengerjakan: periksa pilihan satu per satu dengan melihat tabel.\n- A: rata-rata 2008 = 7,75 dan 2009 = 8,60. Tahun 2008 lebih RENDAH, jadi salah.\n- B: rata-rata 2011 = 10,35 dan 2010 = 9,35. Tahun 2011 lebih TINGGI, jadi salah.\n- C: pertumbuhan ekonomi 2010 = 7,0% dan 2011 = 7,4%. Tidak sama, jadi salah.\n- D: investasi 2011 = 13,3% dan 2012 = 15,9%. Naik, bukan turun, jadi salah.\n- E: rata-rata 2008, 2009, dan 2010 adalah 7,75; 8,60; dan 9,35. Ketiganya di bawah 10. Benar!\nJadi jawabannya E.",
+      "trik": "Soal 'yang BENAR': cek tiap pilihan ke tabel, lalu coret yang jelas salah.",
+      "submateri": "Membaca data tabel"
+    },
+    "3": {
+      "jawaban": "D",
+      "jawaban_teks": "(8) dan (11)",
+      "materi": "Kebahasaan",
+      "pembahasan": "Yang ditanyakan: dua kalimat yang tidak efektif.\nKalimat efektif = kalimat yang jelas, tidak bertele-tele, dan susunannya benar (ada subjek dan predikat yang jelas).\nCara mengerjakan:\n1) Kalimat (8): \"...akan disertai perbaikan teknologi berdampak peningkatan produktivitas...\" Kata \"berdampak\" harus diikuti \"pada\" (berdampak pada peningkatan). Selain itu ada dua predikat (\"disertai\" dan \"berdampak\") yang tidak dihubungkan kata sambung.\n2) Kalimat (11): \"Pertumbuhan ekonomi yang tinggi dan meningkatnya kapasitas produksi, mampu menyerap tenaga kerja...\" Ada tanda koma yang memisahkan subjek dan predikat. Ini salah, karena subjek dan predikat tidak boleh dipisah koma.\n3) Cek pilihan: hanya pilihan D yang berisi (8) dan (11). Pilihan lain memuat kalimat yang sudah baik, yaitu (1), (2), (5), (6), atau (12).\nJadi jawabannya D.",
+      "trik": "Cari dua kesalahan ini: kata depan yang hilang ('berdampak peningkatan') dan koma yang memisahkan subjek-predikat.",
+      "submateri": "Kalimat efektif dan kalimat rumpang",
+      "istilah": "Subjek = pelaku atau hal yang dibicarakan. Predikat = kata kerja atau keterangan tentang subjek."
+    },
+    "4": {
+      "jawaban": "E",
+      "jawaban_teks": "Meningkatnya iklim perekonomian di Indonesia berdampak pada peningkatan kesejahteraan dan mampu menurunkan angka kemiskinan.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: simpulan (kesimpulan) dari seluruh teks.\nSimpulan harus cocok dengan isi teks dan merangkum alurnya. Alur teks: kondisi ekonomi baik, lalu investasi naik, lalu banyak tenaga kerja terserap, lalu pengangguran turun, lalu masyarakat lebih sejahtera dan kemiskinan turun.\nJadi jawabannya E, karena memuat awal dan akhir alur itu.\nKenapa pilihan lain kurang tepat:\n- A: menyebut menurunnya aliran FDI, padahal teks bilang FDI terus meningkat.\n- B: teks bilang inflasi yang RENDAH (bukan tinggi) yang baik.\n- C: kata \"langsung\" kurang tepat, karena kemiskinan turun lewat proses (tenaga kerja terserap dulu).\n- D: teks tidak menyebut FDI sebagai satu-satunya atau faktor utama.",
+      "trik": "Pilih simpulan yang mencakup alur teks dari awal sampai akhir, dan hati-hati dengan kata berlebihan seperti 'langsung' atau 'utama'.",
+      "submateri": "Menarik simpulan",
+      "istilah": "FDI (Foreign Direct Investment) = modal dari luar negeri yang ditanam langsung di dalam negeri, misalnya untuk membangun pabrik."
+    },
+    "5": {
+      "jawaban": "D",
+      "jawaban_teks": "Deflasi yang rendah dibarengi rencana kenaikan upah minimum menyebabkan daya beli riil masyarakat senantiasa meningkat.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: pernyataan yang PALING TIDAK sesuai dengan isi teks (paragraf pertama, kalimat 1 sampai 5).\nCara mengerjakan: cocokkan tiap pilihan dengan kalimatnya.\n- Kalimat (4) di teks berbunyi: \"Inflasi yang rendah dibarengi rencana kenaikan upah minimum...\".\n- Pilihan D menulis \"Deflasi yang rendah...\". Kata kuncinya diganti dari inflasi menjadi deflasi, jadi tidak sesuai dengan teks.\n- Pilihan A, B, C, dan E sama dengan kalimat (1), (2), (3), dan (5).\nJadi jawabannya D.",
+      "trik": "Soal 'TIDAK sesuai': cari kata penting yang diganti, misalnya inflasi menjadi deflasi.",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)",
+      "istilah": "Inflasi = kenaikan harga barang secara umum. Deflasi = penurunan harga barang secara umum. Keduanya berlawanan."
+    },
+    "6": {
+      "jawaban": "C",
+      "jawaban_teks": "memahami bahwa peningkatan perekonomian didukung oleh banyak faktor",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: tujuan penulis, yaitu apa yang ingin penulis agar pembaca pahami.\nCara mengerjakan: lihat isi teks secara keseluruhan. Teks membahas banyak hal sekaligus: kondisi dalam dan luar negeri, FDI, inflasi, upah, lapangan kerja, dan kemiskinan.\nKarena banyak faktor yang dibahas, tujuannya agar pembaca memahami bahwa ekonomi yang membaik didukung oleh banyak faktor.\nJadi jawabannya C.\nPilihan A, B, D, dan E hanya membahas satu bagian kecil teks, jadi terlalu sempit.",
+      "trik": "Tujuan penulis = gambaran seluruh teks, bukan satu detail saja.",
+      "submateri": "Maksud penulis dan kelemahan teks"
+    },
+    "7": {
+      "jawaban": "B",
+      "jawaban_teks": "Penjelasan tentang faktor kondisi eksternal tidak seimbang dengan penjelasan faktor kondisi domestik dalam menghasilkan pertumbuhan ekonomi.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: kelemahan isi teks.\nCara mengerjakan:\n1) Lihat kalimat (1): penulis menulis \"kondisi eksternal dan domestik\". Eksternal = luar negeri, domestik = dalam negeri.\n2) Baca isi teks selanjutnya: hampir semuanya membahas dalam negeri (investasi, upah, tenaga kerja). Kondisi luar negeri hampir tidak dijelaskan.\n3) Jadi penjelasan faktor luar negeri tidak seimbang dengan faktor dalam negeri. Itulah kelemahannya.\nJawabannya B.\nPilihan C kebalikan dari kenyataan. Pilihan E salah karena teks sebenarnya menjelaskan faktor dan dampak pertumbuhan ekonomi.",
+      "trik": "Kelemahan teks sering berupa janji di awal yang tidak dijelaskan di isi.",
+      "submateri": "Maksud penulis dan kelemahan teks"
+    },
+    "8": {
+      "jawaban": "C",
+      "jawaban_teks": "Peningkatan kapasitas produksi berdampak pada peningkatan penyerapan tenaga kerja, yang pada akhirnya mengurangi kemiskinan.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: hubungan sebab-akibat yang paling benar dari kalimat (11) dan (12).\nSusun alurnya:\n- Kalimat (11): kapasitas produksi naik, lalu banyak tenaga kerja terserap, lalu pengangguran turun.\n- Kalimat (12): tenaga kerja terserap lebih banyak (dan inflasi turun), lalu kemiskinan berkurang.\nJadi alurnya: kapasitas produksi naik, lalu penyerapan tenaga kerja naik, lalu kemiskinan turun. Ini sama dengan pilihan C.\nKenapa pilihan lain salah:\n- A: teks tidak bilang turunnya pengangguran membuat inflasi turun.\n- B: kebalikan dari teks (ekonomi tinggi membuat kapasitas produksi naik).\n- D: terlalu berlebihan (\"satu-satunya penyebab\") dan arahnya terbalik.\n- E: teks tidak menyebut inflasi meningkat.",
+      "trik": "Gambar alur dengan panah (→) dari kalimat ke kalimat, lalu cocokkan dengan pilihan.",
+      "submateri": "Hubungan sebab–akibat"
+    },
+    "9": {
+      "jawaban": "B",
+      "jawaban_teks": "Tren konsistensi peningkatan pertumbuhan investasi dan ekonomi terus berlanjut.",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: simpulan yang tepat jika data tahun 2013 ditambahkan.\nCara mengerjakan:\n1) Tren tahun 2008–2012: investasi naik terus (9,3 sampai 15,9) dan ekonomi naik terus (6,2 sampai 8,0).\n2) Data 2013: investasi 18,0 (naik dari 15,9) dan ekonomi 8,5 (naik dari 8,0). Keduanya naik lagi.\n3) Berarti tren naik terus berlanjut. Jawabannya B.\nKenapa pilihan lain salah:\n- A: angkanya naik, bukan turun.\n- C: ekonomi 8,5 lebih kecil daripada investasi 18,0.\n- D: rata-rata (18,0 + 8,5) dibagi 2 = 13,25, lebih dari 10.\n- E: tidak ada data inflasi pada soal.",
+      "trik": "Bandingkan angka tahun terakhir dengan angka sebelumnya: naik atau turun?",
+      "submateri": "Membaca data tabel",
+      "istilah": "Tren = arah perubahan angka dari waktu ke waktu (naik, turun, atau tetap)."
+    },
+    "10": {
+      "jawaban": "C",
+      "jawaban_teks": "6,6%",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: selisih pertumbuhan investasi tahun 2012 dan 2008.\nSelisih artinya dikurangkan: angka yang besar dikurangi angka yang kecil.\n- Investasi 2012 = 15,9%\n- Investasi 2008 = 9,3%\n- Selisih = 15,9 − 9,3 = 6,6%\nJadi jawabannya C.\nHati-hati: angka 1,8% di pilihan A adalah selisih pertumbuhan EKONOMI, bukan investasi.",
+      "trik": "Pastikan membaca kolom yang benar (investasi atau ekonomi) sebelum mengurangkan.",
+      "submateri": "Hitungan sederhana"
+    },
+    "11": {
+      "jawaban": "B",
+      "jawaban_teks": "Tsunami adalah perpindahan badan air yang disebabkan oleh perubahan permukaan laut secara vertikal dengan tiba-tiba.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: pernyataan yang BENAR menurut paragraf 1.\nKalimat pertama paragraf 1 memberi pengertian tsunami: \"perpindahan badan air yang disebabkan oleh perubahan permukaan laut secara vertikal dengan tiba-tiba\". Ini sama dengan pilihan B.\nKenapa pilihan lain salah:\n- A: teks bilang gelombang tsunami dapat merambat ke segala arah, tidak hanya dekat pantai.\n- C: teks tidak menyebut tsunami sampai ke pegunungan.\n- D: sekitar 90% tsunami disebabkan gempa bumi bawah laut, bukan ulah manusia.\n- E: yang disebut penyebabnya adalah gempa yang berpusat di bawah laut.\nJadi jawabannya B.",
+      "trik": "Soal 'BENAR menurut teks': cari kalimat yang sama persis dengan pilihan.",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)"
+    },
+    "12": {
+      "jawaban": "C",
+      "jawaban_teks": "Tsunami tidak akan terjadi karena tidak ada faktor penyebabnya.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: simpulan jika TIDAK ada gangguan (gempa, letusan gunung api, longsor, atau meteor).\nTeks bilang tsunami terjadi jika ada gangguan yang memindahkan banyak air. Semua penyebab itu sudah disebutkan di teks.\nKalau semua penyebab itu tidak ada, tsunami tidak akan terjadi. Jadi jawabannya C.\nKenapa pilihan lain salah:\n- A, B, dan E: membahas jangkauan atau kerusakan tsunami, bukan akibat dari ketiadaan penyebab.\n- D: hanya menyebut meteor, padahal penyebab lain juga ada.",
+      "trik": "Pola logika: JIKA ada penyebab MAKA tsunami. Penyebab tidak ada, maka tsunami tidak terjadi.",
+      "submateri": "Logika jika–maka",
+      "istilah": "Jika–maka: contoh, 'Jika hujan, maka jalan basah'. Jika tidak ada hujan, jalan tidak basah karena hujan."
+    },
+    "13": {
+      "jawaban": "A",
+      "jawaban_teks": "Tsunami disebabkan oleh gempa bumi di bawah laut yang terjadi dekat daerah tersebut.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: simpulan yang PALING MUNGKIN benar jika terjadi tsunami.\nTeks bilang sekitar 90% tsunami disebabkan gempa bumi di bawah laut. Itu hampir semua kejadian.\nKarena itu, penyebab yang paling mungkin adalah gempa bumi bawah laut. Jawabannya A.\nPilihan B, C, D, dan E tidak dibahas oleh teks, jadi tidak bisa dijadikan simpulan.",
+      "trik": "Kata 'paling mungkin' berarti pilih yang peluangnya terbesar (lihat angka persen di teks).",
+      "submateri": "Menarik simpulan"
+    },
+    "14": {
+      "jawaban": "E",
+      "jawaban_teks": "Gelombang laut mengalami gangguan kesetimbangan air yang berada di atasnya.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: pernyataan yang benar tentang gerakan vertikal kerak bumi (paragraf 2).\nParagraf 2 bilang: dasar laut naik atau turun tiba-tiba, sehingga kesetimbangan air di atasnya terganggu. Ini sama dengan pilihan E.\nKenapa pilihan lain kurang tepat:\n- A, B, dan D tidak dinyatakan seperti itu oleh paragraf 2.\n- C: kecepatan di pantai sekitar 50 km/jam (\"kurang lebih\"), bukan pasti kurang dari 50.\nJadi jawabannya E.",
+      "trik": "Cari kalimat pertama paragraf 2, lalu lihat akibat yang disebut setelah kata 'yang mengakibatkan'.",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)"
+    },
+    "15": {
+      "jawaban": "C",
+      "jawaban_teks": "(3)",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: kalimat tersebut ada di paragraf nomor berapa.\nCara mengerjakan: cari kata kunci \"merayap masuk daratan\". Kata itu ada di paragraf ketiga (\"Di tengah laut tinggi gelombang tsunami... Saat mencapai pantai, tsunami akan merayap masuk daratan...\").\nJadi jawabannya C.",
+      "trik": "Gunakan kata kunci yang unik, lalu cari di tiap paragraf (membaca sekilas).",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)"
+    },
+    "16": {
+      "jawaban": "C",
+      "jawaban_teks": "Gempa bumi juga sering terjadi di daerah subduksi.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: pernyataan yang paling mungkin benar menurut paragraf 3.\nKalimat terakhir paragraf 3: \"Gempa bumi juga banyak terjadi di daerah subduksi...\". \"Banyak terjadi\" sama artinya dengan \"sering terjadi\". Jadi jawabannya C.\nKenapa pilihan lain salah:\n- A: teks bilang gerakan VERTIKAL, bukan horizontal.\n- B: terbalik, yang menyusup ke bawah adalah lempeng samudra.\n- D: terbalik, gempa yang menyebabkan gelombang, bukan gelombang yang menyebabkan gempa.\n- E: penumpukan massa air membuat gelombang menjadi tinggi di pantai.",
+      "trik": "Waspadai pilihan yang membalik subjek dan objek (siapa menyusup ke bawah siapa).",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)",
+      "istilah": "Subduksi = lempeng samudra menyusup ke bawah lempeng benua. Sesar = patahan pada kerak bumi."
+    },
+    "17": {
+      "jawaban": "C",
+      "jawaban_teks": "pasang surut air laut",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: yang BUKAN penyebab tsunami menurut paragraf 4.\nParagraf 4 menyebut penyebab tsunami: tanah longsor di dasar laut, runtuhan gunung api, gempa yang membuat dasar laut naik-turun, dan meteor atau longsor yang besar.\nPilihan A, B, D, dan E semuanya ada di paragraf 4. Pilihan C (pasang surut air laut) tidak disebut, dan itu kejadian biasa yang terjadi setiap hari.\nJadi jawabannya C.",
+      "trik": "Soal 'BUKAN': coret semua pilihan yang ada di teks. Sisanya adalah jawaban.",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)"
+    },
+    "18": {
+      "jawaban": "C",
+      "jawaban_teks": "Kecepatan berkurang dari ratusan km/jam menjadi ~50 km/jam, namun tinggi gelombang melonjak hingga puluhan meter.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: perubahan kecepatan dan tinggi gelombang tsunami dari laut dalam sampai ke pantai.\nCara mengerjakan:\n1) Paragraf 2: kecepatan di laut dalam bisa ratusan km/jam. Di pantai menjadi sekitar 50 km/jam, jadi kecepatan berkurang.\n2) Paragraf 3: tinggi gelombang di tengah laut hanya beberapa sentimeter sampai beberapa meter. Di pantai bisa puluhan meter, jadi tinggi gelombang bertambah.\nJadi jawabannya C.\nPilihan A kebalikannya. Pilihan B, D, dan E memuat hal yang tidak ada di teks (berhenti, ribuan meter, kecepatan nol).",
+      "trik": "Kerjakan dua hal sendiri-sendiri: kecepatan (dari paragraf 2) dan tinggi (dari paragraf 3).",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)"
+    },
+    "19": {
+      "jawaban": "B",
+      "jawaban_teks": "Potensi tsunami akibat gempa pergeseran lempeng di wilayah tersebut minim, namun tsunami masih bisa terpicu oleh faktor lain seperti meteor atau longsor bawah laut.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: simpulan jika wilayah pantai tidak dekat sesar dan tidak di zona subduksi.\nTeks menyebut banyak penyebab tsunami: gempa (di sesar atau subduksi), longsor bawah laut, runtuhan gunung api, dan meteor.\nTanpa sesar dan subduksi, penyebab dari gempa lempeng berkurang. Tetapi penyebab lain masih ada. Jadi jawabannya B.\nPilihan A terlalu ekstrem (\"sama sekali tidak bisa\"). Pilihan C, D, dan E tidak ada dasarnya di teks.",
+      "trik": "Waspada kata yang terlalu ekstrem seperti 'pasti', 'sama sekali', dan 'selalu'. Biasanya salah.",
+      "submateri": "Logika jika–maka",
+      "istilah": "Sesar = patahan pada kerak bumi. Zona subduksi = tempat satu lempeng bumi menyusup ke bawah lempeng lain."
+    },
+    "20": {
+      "jawaban": "A",
+      "jawaban_teks": "Karena adanya penumpukan masa air yang besar sehingga gelombang menjulang tinggi hingga puluhan meter.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: kenapa tsunami di pantai sangat merusak walaupun kecepatannya sudah turun jadi sekitar 50 km/jam.\nDari teks: saat sampai di pantai, air menumpuk sehingga tinggi gelombang bisa puluhan meter. Paragraf 2 juga bilang energinya sangat merusak daerah pantai.\nJadi sebabnya adalah penumpukan masa air yang membuat gelombang menjulang tinggi. Jawabannya A.\nPilihan B, C, D, dan E tidak ada di teks.",
+      "trik": "Soal 'mengapa' = cari sebab. Cari kata 'karena' atau alasan yang disebut di teks.",
+      "submateri": "Hubungan sebab–akibat"
+    },
+    "21": {
+      "jawaban": "C",
+      "jawaban_teks": "Kepler-22b berukuran 2,4 kali lebih besar dari Bumi dan mengorbit bintang Kepler 22.",
+      "materi": "Pemahaman Bacaan",
+      "pembahasan": "Yang ditanyakan: pernyataan yang BENAR tentang Kepler-22b.\nPeriksa tiap pilihan:\n- A: salah. Kepler-22b mengelilingi bintang Kepler 22 (bukan Matahari), selama 290 hari.\n- B: salah. Jaraknya 600 tahun cahaya, bukan 600 triliun km.\n- C: benar. Ukurannya 2,4 kali Bumi dan mengorbit bintang Kepler 22.\n- D: salah. Massanya belum diketahui, jadi belum pasti planet batuan.\n- E: salah. Butuh sekitar 22 JUTA tahun, bukan 22 tahun.\nJadi jawabannya C.",
+      "trik": "Periksa angka dan nama satu per satu. Jebakan biasanya ada di angka dan satuan.",
+      "submateri": "Informasi tersurat (yang tertulis jelas di teks)",
+      "istilah": "Tahun cahaya = jarak yang ditempuh cahaya dalam satu tahun, sekitar 9,65 triliun km."
+    },
+    "22": {
+      "jawaban": "B",
+      "jawaban_teks": "Manusia akan sulit untuk hidup di sana.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: simpulan jika Kepler-22b ternyata planet gas raksasa.\nTeks (paragraf 3): \"Jika merupakan planet gas, maka tentu sulit bagi manusia untuk hidup di sana.\"\nJadi jawabannya B.\nPilihan lain tidak berhubungan dengan syarat \"planet gas\": A (justru kebalikan), C (waktu putar planet), D (jarak), dan E (suhu).",
+      "trik": "Pola 'jika–maka': ambil bagian 'maka' dari kalimat yang cocok dengan syaratnya.",
+      "submateri": "Logika jika–maka"
+    },
+    "23": {
+      "jawaban": "B",
+      "jawaban_teks": "Karena jarak 600 tahun cahaya membutuhkan waktu perjalanan sekitar 22 juta tahun dengan teknologi sekarang.",
+      "materi": "Penalaran Logika",
+      "pembahasan": "Yang ditanyakan: kenapa perjalanan ke Kepler-22b masih sebatas mimpi.\nDari teks: jaraknya sangat jauh (600 tahun cahaya). Dengan teknologi sekarang, perjalanan ke sana butuh sekitar 22 juta tahun.\nJadi alasannya adalah waktu tempuh yang sangat lama. Jawabannya B.\nPilihan A, C, D, dan E tidak disebut di teks.",
+      "trik": "Cari alasan yang benar-benar ditulis di teks, bukan yang terdengar masuk akal.",
+      "submateri": "Hubungan sebab–akibat"
+    },
+    "24": {
+      "jawaban": "B",
+      "jawaban_teks": "1.232 kandidat",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: jumlah kandidat planet SEBELUM ditambah.\nCara mengerjakan:\n- Sekarang ada 2.326 kandidat.\n- Jumlah ini \"bertambah 1.094\" dari pengumuman sebelumnya.\n- Jadi jumlah sebelumnya = jumlah sekarang − tambahan = 2.326 − 1.094 = 1.232.\nJadi jawabannya B.\nHati-hati: 2.326 adalah jumlah SESUDAH bertambah, jadi pilihan C bukan jawabannya.",
+      "trik": "'Bertambah' artinya jumlah awal lebih sedikit. Jadi kurangkan tambahannya.",
+      "submateri": "Hitungan sederhana"
+    },
+    "25": {
+      "jawaban": "C",
+      "jawaban_teks": "adalah sekitar",
+      "materi": "Kebahasaan",
+      "pembahasan": "Yang ditanyakan: kata atau frasa untuk mengisi bagian [...] pada kalimat \"...maka temperatur di planet itu [...] 22 derajat celsius.\"\nCara mengerjakan: coba masukkan tiap pilihan ke kalimat.\n- C: \"temperatur di planet itu adalah sekitar 22 derajat celsius.\" Kalimat jelas dan masuk akal.\n- A: \"dipastikan lebih dingin dari 22 derajat\" tidak cocok dengan teks yang bilang suhunya mirip Bumi.\n- B: \"disebabkan oleh 22 derajat\" tidak masuk akal.\n- D: \"berkurang hingga\" salah karena tidak ada suhu awal yang disebut.\n- E: \"tidak mungkin\" tidak cocok dengan kalimatnya.\nJadi jawabannya C.",
+      "trik": "Untuk soal kalimat rumpang, masukkan setiap pilihan lalu baca kalimatnya: mana yang paling wajar?",
+      "submateri": "Kalimat efektif dan kalimat rumpang"
+    },
+    "26": {
+      "jawaban": "A",
+      "jawaban_teks": "4 jam 5 menit",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: berapa lama Andi sampai di kota B.\nCara mengerjakan:\n1) Waktu berkendara tanpa istirahat = 4 jam.\n2) Andi istirahat hanya SATU kali, yaitu tepat di tengah perjalanan, selama 5 menit.\n3) Total waktu = 4 jam + 5 menit = 4 jam 5 menit.\nJadi jawabannya A.",
+      "trik": "Hitung dulu berapa kali Andi berhenti, lalu tambahkan waktu berhentinya ke waktu berkendara.",
+      "submateri": "Waktu dan jarak"
+    },
+    "27": {
+      "jawaban": "A",
+      "jawaban_teks": "6 sore",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: pukul berapa Maya tiba di negara I (menurut jam negara I).\nCara mengerjakan:\n1) Rani dan Maya berangkat bersamaan, yaitu pukul 14.00 menurut jam negara I.\n2) Lama terbang 4 jam (untuk dua arah).\n3) Karena yang ditanya adalah jam di negara I, kita tetap pakai jam negara I: 14.00 + 4 jam = 18.00.\n4) Pukul 18.00 = 6 sore.\nJadi jawabannya A.\nCatatan: selisih waktu 1 jam antara negara I dan M tidak perlu dipakai karena seluruh hitungan memakai jam negara I.",
+      "trik": "Pilih satu jam acuan (di sini jam negara I), lalu hitung semuanya memakai jam itu.",
+      "submateri": "Waktu dan jarak",
+      "istilah": "Zona waktu = pembagian wilayah bumi yang memakai jam berbeda. Negara I 1 jam lebih cepat artinya saat di I pukul 14.00, di M pukul 13.00."
+    },
+    "28": {
+      "jawaban": "A",
+      "jawaban_teks": "1 : 1",
+      "materi": "Penalaran Kuantitatif",
+      "pembahasan": "Yang ditanyakan: perbandingan jumlah siswa kelas X dan kelas XI.\nCara cepat: rata-rata gabungan adalah 16,5, tepat di tengah antara 16 (kelas X) dan 17 (kelas XI). Kalau rata-rata gabungan ada di tengah, jumlah siswanya sama banyak. Jadi perbandingannya 1 : 1.\nCara hitung untuk memeriksa:\n- Misalkan tiap kelas punya 10 siswa.\n- Jumlah umur kelas X = 10 × 16 = 160. Kelas XI = 10 × 17 = 170.\n- Rata-rata gabungan = (160 + 170) ÷ 20 = 330 ÷ 20 = 16,5. Sesuai dengan soal.\nJadi jawabannya A.",
+      "trik": "Kalau rata-rata gabungan tepat di tengah dua rata-rata, perbandingan jumlahnya 1 : 1.",
+      "submateri": "Hitungan sederhana",
+      "istilah": "Rata-rata gabungan = rata-rata dari dua kelompok yang digabung menjadi satu kelompok."
+    },
+    "29": {
+      "jawaban": "D",
+      "jawaban_teks": "Seragam dengan celana biru digunakan 3 hari berturut-turut.",
+      "materi": "Penalaran Analitis",
+      "pembahasan": "Yang ditanyakan: pernyataan yang BENAR tentang jadwal seragam Gilang.\nCara mengerjakan:\n1) Ada 6 hari sekolah: Senin sampai Sabtu.\n2) Senin: kemeja putih berbadge + celana abu-abu. Jumat: baju olahraga + celana abu-abu.\n3) Celana biru dipakai oleh: batik (2 hari) dan baju putih tanpa badge (2 hari). Total 4 hari.\n4) Hari yang tersisa: Selasa, Rabu, Kamis, dan Sabtu (4 hari). Semuanya pasti memakai celana biru.\n5) Selasa, Rabu, Kamis berurutan, jadi celana biru dipakai 3 hari berturut-turut. Jawabannya D.\nKenapa pilihan lain salah:\n- A: celana abu-abu hanya hari Senin dan Jumat, tidak berurutan.\n- B: celana biru dipakai 4 kali, bukan 2.\n- C: celana biru tidak dipakai setiap hari (Senin dan Jumat abu-abu).\n- E: celana biru justru paling sering dipakai (4 hari).",
+      "trik": "Tulis hari Senin sampai Sabtu dalam satu baris, lalu isi hari yang sudah pasti dahulu.",
+      "submateri": "Menyusun jadwal dan urutan",
+      "istilah": "Badge = lambang atau tanda yang dipasang di seragam."
+    },
+    "30": {
+      "jawaban": "A",
+      "jawaban_teks": "pisang dan ceri",
+      "materi": "Penalaran Analitis",
+      "pembahasan": "Yang ditanyakan: buah yang paling murah dan buah yang paling segar.\nCara mengerjakan:\n1) Urutan harga dari yang termahal: anggur > ceri > belimbing > duku > pisang. Jadi yang PALING MURAH adalah pisang.\n2) Urutan kesegaran dari yang paling segar: ceri lebih segar daripada belimbing, belimbing lebih segar daripada duku, duku lebih segar daripada anggur. Ceri juga lebih segar daripada pisang. Jadi yang PALING SEGAR adalah ceri.\n3) Berturut-turut: pisang (paling murah) dan ceri (paling segar).\nJadi jawabannya A.",
+      "trik": "Buat dua urutan terpisah (harga dan kesegaran). Jangan dicampur.",
+      "submateri": "Menyusun jadwal dan urutan"
+    }
+  },
+  "catatan_revisi": {
+    "3": "Soal dirancang ulang: pilihan jawaban diperbaiki agar hanya satu pasangan (8 dan 11) yang kedua kalimatnya tidak efektif, dengan alasan kebahasaan yang jelas.",
+    "4": "Pilihan A diganti karena versi lama (peningkatan sektor perdagangan) bisa dianggap benar dan bersaing dengan kunci E.",
+    "20": "Pembahasan disesuaikan dengan isi teks (klaim 'laut dangkal' dan 'energi potensial' tidak ada di teks).",
+    "25": "Pilihan A diganti karena 'akan mencapai' juga cocok secara makna dan bersaing dengan kunci C.",
+    "26": "Soal dirumuskan ulang karena kalimat lama 'tiap setengah perjalanan' bermakna ganda dan kunci lama (3 kali istirahat) tidak berdasar. Kunci sekarang A.",
+    "27": "Soal dirumuskan ulang (waktu 14.00 dinyatakan menurut negara I, waktu terbang dua arah sama, jawaban diminta menurut waktu I). Kunci lama C (8 malam) tidak dapat diturunkan dari soal; kunci sekarang A.",
+    "pembahasan": "Seluruh pembahasan ditulis ulang dengan bahasa sederhana (level pemula), disertai alasan pilihan lain salah dan istilah penting."
+  },
+  "catatan_admin": {
+    "TEKS_3": {
+      "visual_prompt": {
+        "generator": "PROMPT NANOBANANA GEMINI (Visual Generator)",
+        "title": "Ilustrasi Sci-Fi Planet Kepler-22b Mengorbit Bintang Kepler 22",
+        "prompt_text": "A breathtaking cinematic astronomy illustration of exoplanet Kepler-22b orbiting its yellow dwarf star Kepler 22. Showing a super-Earth planet with deep blue oceans, swirling white clouds, and vibrant green continents. Glowing star light illuminating the planet horizon, outer space galaxy background, photorealistic 8k NASA astronomy photograph style."
+      },
+      "cara_pakai": "Buat gambar dari prompt ini, unggah ke repo (mis. gambar/PU-1-teks3.jpg), lalu tambahkan ke reading_texts TEKS_3 pada bagian media: {\"type\":\"image_url\",\"url\":\"gambar/PU-1-teks3.jpg\",\"description\":\"...\"}"
+    }
+  },
+  "petunjuk": {
+    "materi_dan_submateri": "Setiap soal wajib punya 'materi' dan 'submateri'. Dashboard memakainya untuk menghitung persentase penguasaan siswa. Untuk Super Tryout boleh menambah 'mapel' (nama mata uji) agar hasil dikelompokkan per mata uji."
+  }
+}
