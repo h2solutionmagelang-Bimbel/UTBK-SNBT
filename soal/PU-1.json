@@ -1,0 +1,431 @@
+{
+  "title": "PAKET 1 SOAL TPS UTBK SBMPTN - PENALARAN UMUM (30 SOAL)",
+  "subtest": "PENALARAN UMUM (PU)",
+  "reading_texts": [
+    {
+      "id": "TEKS_1",
+      "title": "TEKS BACAAN 1: PERTUMBUHAN INVESTASI DAN EKONOMI INDONESIA",
+      "description": "Teks berikut ini digunakan untuk menjawab nomor soal 1 sampai dengan 10.",
+      "content_paragraphs": [
+        "(1) Kondisi eksternal dan domestik yang kondusif akan menghasilkan pertumbuhan ekonomi yang lebih tinggi dan laju inflasi yang tetap terkendali.",
+        "(2) Stabilitas ekonomi makro yang terus terjaga dan potensi pasar yang besar menjadi daya tarik investor internasional untuk tetap melakukan investasi di Indonesia.",
+        "(3) Aliran masuk Foreign Direct Investment (FDI) yang terus meningkat, diikuti dengan pesatnya pertumbuhan investasi serta meningkatnya kapasitas perekonomian dari sisi penawaran, menyebabkan pertumbuhan ekonomi melaju dengan cepat.",
+        "(4) Inflasi yang rendah dibarengi rencana kenaikan upah minimum menyebabkan daya beli riil masyarakat senantiasa meningkat sehingga konsumsi swasta diperkirakan akan tetap tumbuh tinggi mencapai 5,6%–6,0% pada 2012.",
+        "(5) Kondisi peningkatan pertumbuhan investasi dan pertumbuhan ekonomi di Indonesia mengalami peningkatan dari tahun ke tahun seperti terlihat dalam tabel berikut."
+      ],
+      "tables": [
+        {
+          "title": "Tabel 1: Pertumbuhan Investasi dan Pertumbuhan Ekonomi Indonesia",
+          "headers": [
+            "Tahun",
+            "Pertumbuhan Investasi",
+            "Pertumbuhan Ekonomi",
+            "Rata-rata"
+          ],
+          "rows": [
+            [
+              "2008",
+              "9,3%",
+              "6,2%",
+              "7,75%"
+            ],
+            [
+              "2009",
+              "10,4%",
+              "6,8%",
+              "8,60%"
+            ],
+            [
+              "2010",
+              "11,7%",
+              "7,0%",
+              "9,35%"
+            ],
+            [
+              "2011",
+              "13,3%",
+              "7,4%",
+              "10,35%"
+            ],
+            [
+              "2012",
+              "15,9%",
+              "8,0%",
+              "11,95%"
+            ]
+          ]
+        }
+      ],
+      "content_paragraphs_continuation": [
+        "(6) Berdasarkan tabel tersebut, terlihat bahwa kondisi domestik masih kondusif yang nantinya berdampak pada peningkatan kinerja ekspor Indonesia.",
+        "(7) Akibatnya, perekonomian diperkirakan akan membaik dan aliran FDI global ke Indonesia terus meningkat sehingga neraca pembayaran tetap mantap dan nilai tukar cenderung stabil.",
+        "(8) Selain itu, maraknya aliran masuk FDI akan disertai perbaikan teknologi berdampak peningkatan produktivitas dan efisiensi.",
+        "(9) Kestabilan neraca pembayaran yang didukung oleh membaiknya fundamental perekonomian diperkirakan berdampak pada kestabilan nilai tukar uang.",
+        "(10) Pertumbuhan ekonomi yang lebih tinggi, laju inflasi yang tetap terkendali, nilai tukar uang yang cenderung stabil, serta perbaikan sisi penawaran diprediksi akan berkontribusi pada peningkatan kesejahteraan masyarakat.",
+        "(11) Pertumbuhan ekonomi yang tinggi dan meningkatnya kapasitas produksi, mampu menyerap tenaga kerja sehingga tingkat pengangguran akan menurun.",
+        "(12) Meningkatnya penyerapan tenaga kerja yang dibarengi dengan inflasi yang terus menurun akan berdampak pada pengurangan tingkat kemiskinan."
+      ]
+    },
+    {
+      "id": "TEKS_2",
+      "title": "TEKS BACAAN 2: FENOMENA TSUNAMI DAN PENYEBABNYA",
+      "description": "Teks berikut ini digunakan untuk menjawab soal nomor 11 sampai dengan 20.",
+      "content_paragraphs": [
+        "Tsunami (tsu = pelabuhan, nami = gelombang, secara harfiah berarti \"ombak besar di pelabuhan\") adalah perpindahan badan air yang disebabkan oleh perubahan permukaan laut secara vertikal dengan tiba-tiba. Perubahan permukaan laut tersebut bisa disebabkan oleh gempa bumi yang berpusat di bawah laut, letusan gunung berapi bawah laut, longsor bawah laut, atau hantaman meteor di laut. Gelombang tsunami dapat merambat ke segala arah. Tsunami dapat terjadi jika terjadi gangguan yang menyebabkan perpindahan sejumlah besar air, seperti letusan gunung api, gempa bumi, longsor, maupun meteor yang jatuh ke bumi. Dalam rekaman sejarah beberapa tsunami diakibatkan oleh gunung meletus, misalnya ketika meletusnya Gunung Krakatau. Namun, 90% tsunami adalah akibat gempa bumi bawah laut.",
+        "Gerakan vertikal pada kerak bumi, dapat mengakibatkan dasar laut naik atau turun secara tiba-tiba, yang mengakibatkan gangguan kesetimbangan air yang berada di atasnya. Hal ini mengakibatkan terjadinya aliran energi air laut, yang ketika sampai di pantai menjadi gelombang besar yang mengakibatkan terjadinya tsunami. Kecepatan gelombang tsunami tergantung pada kedalaman laut tempat gelombang terjadi. Kecepatannya bisa mencapai ratusan kilometer per jam. Bila tsunami mencapai pantai, kecepatannya berubah menjadi kurang lebih 50 km/jam dan energinya sangat merusak daerah pantai yang dilaluinya.",
+        "Di tengah laut tinggi gelombang tsunami hanya beberapa sentimeter hingga beberapa meter. Namun, saat mencapai pantai, tinggi gelombangnya bisa mencapai puluhan meter karena terjadi penumpukan masa air. Saat mencapai pantai, tsunami akan merayap masuk daratan jauh dari garis pantai dengan jangkauan mencapai beberapa ratus meter bahkan bisa beberapa kilometer. Gerakan vertikal ini dapat terjadi pada patahan bumi atau sesar. Gempa bumi juga banyak terjadi di daerah subduksi, di mana lempeng samudra menelusup ke bawah lempeng benua.",
+        "Tanah longsor yang terjadi di dasar laut serta runtuhan gunung api juga dapat mengakibatkan gangguan air laut yang dapat menghasilkan tsunami. Gempa juga dapat menyebabkan gerakan tegak lurus lapisan bumi. Akibatnya, dasar laut naik-turun secara tiba-tiba sehingga keseimbangan air laut yang berada di atasnya terganggu. Demikian pula halnya dengan benda kosmis atau meteor yang jatuh dari atas. Jika ukuran meteor atau longsor ini cukup besar, dapat terjadi tsunami dahsyat yang tingginya mencapai ratusan meter."
+      ],
+      "media": [
+        {
+          "type": "image_url",
+          "url": "gambar/PU-1-A2.jpg",
+          "description": "Gambar Ilustrasi Mekanisme Gelombang Tsunami"
+        }
+      ]
+    },
+    {
+      "id": "TEKS_3",
+      "title": "TEKS BACAAN 3: PENEMUAN PLANET LAYAK HUNI KEPLER-22B DAN LOGIKA SBMPTN",
+      "description": "Teks berikut ini digunakan untuk menjawab soal nomor 21 sampai dengan 30.",
+      "content_paragraphs": [
+        "Wahana antariksa Kepler kembali membuat kejutan. NASA mengumumkan pada Senin (5/12/2011) bahwa salah satu dari 2.326 kandidat planet temuan Kepler telah dikonfirmasi sebagai planet layak huni. \"Ini penemuan yang fenomenal, ini membuktikan bahwa Homo sapiens semakin dekat dengan pencapaian kita di semesta untuk menemukan planet yang mengingatkan kita akan rumah. Kita hampir di sana,\" kata Geoff Marcy, peneliti dari University of California, Berkeley, seperti dikutip AP, Selasa (6/12/2011).",
+        "Planet yang dikonfirmasi layak huni tersebut bernama Kepler 22b. Planet itu mengorbit bintang serupa Matahari bernama Kepler 22 dan berjarak 600 tahun cahaya dari Bumi. Kepler 22b memiliki beberapa kesamaan dengan Bumi. Bumi mengelilingi Matahari selama 365 hari, sedangkan Kepler 22b mengelilingi bintang induknya dalam waktu 290 hari, cuma beda tipis. Temperatur Bumi dan Kepler 22b pun tak berbeda jauh. Disebutkan bahwa jika efek rumah kaca bekerja di Kepler 22b, maka temperatur di planet itu [...] 22 derajat celsius.",
+        "Perbedaan dijumpai pada ukurannya. Kepler 22b berukuran 2,4 kali lebih besar daripada Bumi. Sementara massanya, belum diketahui sehingga sulit dipastikan apakah Kepler 22b merupakan planet batuan atau gas raksasa. Jika merupakan planet gas, maka tentu sulit bagi manusia untuk hidup di sana. Meski dikonfirmasi layak huni, masih sulit bagi manusia untuk pergi ke Kepler 22b. Satu tahun cahaya setara dengan 9,65 triliun kilometer. Butuh waktu 22 juta tahun untuk ke sana dengan tekhnologi yang ada sekarang. Teknologilah yang nanti akan menjawab apakah pergi ke Kepler 22b akan menjadi mimpi atau kenyataan.",
+        "Selain penemuan Kepler 22b, NASA juga mengumumkan bahwa kini Kepler telah memiliki 2.326 kandidat planet layak huni. Jumlah ini bertambah 1.094 dari pengumuman sebelumnya."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "text": "Pernyataan manakah yang paling sesuai dengan isi tabel tersebut?",
+      "options": {
+        "A": "Pertumbuhan investasi dari tahun ke tahun mengalami peningkatan yang konstan.",
+        "B": "Pertumbuhan ekonomi dari tahun ke tahun mengalami fluktuasi yang sangat berarti.",
+        "C": "Dari tahun ke tahun peningkatan laju pertumbuhan ekonomi lebih cepat dibandingkan dengan laju pertumbuhan investasi.",
+        "D": "Peningkatan laju pertumbuhan investasi lebih cepat dibandingkan dengan laju pertumbuhan ekonomi dari tahun ke tahun.",
+        "E": "Dari tahun ke tahun rata-rata pertumbuhan ekonomi dan investasi di Indonesia meningkat sangat tajam."
+      }
+    },
+    {
+      "number": 2,
+      "text": "Berdasarkan tabel tersebut, manakah pernyataan di bawah ini yang BENAR?",
+      "options": {
+        "A": "Pertumbuhan investasi dan pertumbuhan ekonomi pada tahun 2008, rata-ratanya lebih tinggi dari tahun 2009.",
+        "B": "Pertumbuhan investasi dan pertumbuhan ekonomi pada tahun 2011, rata-ratanya lebih rendah dari tahun 2010.",
+        "C": "Pada tahun 2010 dan 2011, pertumbuhan ekonomi berada pada persentase yang sama.",
+        "D": "Pertumbuhan investasi pada tahun 2012 mengalami penurunan dari tahun sebelumnya.",
+        "E": "Rata-rata pertumbuhan investasi dan ekonomi pada periode tahun 2008–2010 berada pada persentase di bawah 10%."
+      }
+    },
+    {
+      "number": 3,
+      "text": "Kalimat yang tidak efektif terdapat pada kalimat nomor ....",
+      "options": {
+        "A": "(1) dan (8)",
+        "B": "(2) dan (11)",
+        "C": "(5) dan (12)",
+        "D": "(8) dan (11)",
+        "E": "(6) dan (10)"
+      }
+    },
+    {
+      "number": 4,
+      "text": "Pernyataan-pernyataan di bawah ini yang dapat dijadikan simpulan dari teks tersebut adalah ....",
+      "options": {
+        "A": "Kondisi domestik yang kondusif menyebabkan menurunnya aliran FDI ke Indonesia.",
+        "B": "Menurunnya tingkat pengangguran disebabkan oleh laju inflasi yang cukup tinggi.",
+        "C": "Kondisi domestik yang kondusif berdampak langsung terhadap penurunan angka kemiskinan di Indonesia.",
+        "D": "Aliran FDI global ke Indonesia merupakan faktor utama peningkatan kesejahteraan dan menurunkan angka kemiskinan di Indonesia.",
+        "E": "Meningkatnya iklim perekonomian di Indonesia berdampak pada peningkatan kesejahteraan dan mampu menurunkan angka kemiskinan."
+      }
+    },
+    {
+      "number": 5,
+      "text": "Pernyataan manakah yang paling TIDAK sesuai dengan isi paragraf pertama?",
+      "options": {
+        "A": "Kondisi eksternal dan domestik yang kondusif akan menghasilkan pertumbuhan ekonomi yang lebih tinggi dan laju inflasi yang tetap terkendali.",
+        "B": "Stabilitas ekonomi makro yang terus terjaga dan potensi pasar yang besar menjadi daya tarik investor internasional untuk tetap melakukan investasi di Indonesia.",
+        "C": "Aliran masuk Foreign Direct Investment (FDI) yang terus meningkat diikuti dengan pesatnya pertumbuhan investasi serta meningkatnya kapasitas perekonomian dari sisi penawaran.",
+        "D": "Deflasi yang rendah dibarengi rencana kenaikan upah minimum menyebabkan daya beli riil masyarakat senantiasa meningkat.",
+        "E": "Kondisi peningkatan pertumbuhan investasi dan pertumbuhan ekonomi di Indonesia mengalami peningkatan dari tahun ke tahun."
+      }
+    },
+    {
+      "number": 6,
+      "text": "Penulis teks tersebut bertujuan agar pembaca ....",
+      "options": {
+        "A": "menyadari pentingnya aliran dana FDI ke Indonesia yang meningkatkan ekspor",
+        "B": "mengetahui bahwa angka kemiskinan dapat diantisipasi dengan penurunan jumlah pengangguran",
+        "C": "memahami bahwa peningkatan perekonomian didukung oleh banyak faktor",
+        "D": "mengetahui bahwa kesejahteraan masyarakat akan terwujud bila perekonomian lebih stabil",
+        "E": "menyadari bahwa sistem perekonomian sebagai faktor yang sangat penting"
+      }
+    },
+    {
+      "number": 7,
+      "text": "Apa kelemahan isi teks tersebut?",
+      "options": {
+        "A": "Peningkatan laju pertumbuhan investasi dan laju pertumbuhan perekonomian dari tahun ke tahun tidak didukung oleh data yang lengkap dan akurat.",
+        "B": "Penjelasan tentang faktor kondisi eksternal tidak seimbang dengan penjelasan faktor kondisi domestik dalam menghasilkan pertumbuhan ekonomi.",
+        "C": "Faktor kondisi perekonomian domestik tidak mendapat perhatian yang khusus dalam teks dibandingkan faktor eksternal.",
+        "D": "Penyebab pengurangan tingkat pengangguran dan menurunnya angka kemiskinan tidak dijelaskan dalam teks.",
+        "E": "Faktor-faktor yang menyebabkan laju pertumbuhan ekonomi serta dampak yang ditimbulkannya tidak dijelaskan dalam teks."
+      }
+    },
+    {
+      "number": 8,
+      "text": "Berdasarkan kalimat (11) dan (12), manakah hubungan kausalitas berikut yang paling BENAR?",
+      "options": {
+        "A": "Penurunan tingkat pengangguran secara langsung menyebabkan inflasi terus menurun.",
+        "B": "Pertumbuhan ekonomi yang tinggi menyebabkan kapasitas produksi menurun.",
+        "C": "Peningkatan kapasitas produksi berdampak pada peningkatan penyerapan tenaga kerja, yang pada akhirnya mengurangi kemiskinan.",
+        "D": "Penurunan angka kemiskinan adalah satu-satunya penyebab utama terjadinya peningkatan kapasitas produksi.",
+        "E": "Inflasi yang meningkat pesat berdampak langsung pada penyerapan tenaga kerja di sektor swasta."
+      }
+    },
+    {
+      "number": 9,
+      "text": "Apabila pada tahun 2013 pertumbuhan investasi meningkat menjadi 18,0% sedangkan pertumbuhan ekonomi menjadi 8,5%, simpulan manakah yang paling tepat jika dibandingkan dengan kecenderungan tren tahun 2008–2012?",
+      "options": {
+        "A": "Pertumbuhan investasi dan ekonomi mengalami penurunan drastis.",
+        "B": "Tren konsistensi peningkatan pertumbuhan investasi dan ekonomi terus berlanjut.",
+        "C": "Laju pertumbuhan ekonomi melebihi laju pertumbuhan investasi.",
+        "D": "Rata-rata pertumbuhan investasi dan ekonomi pada tahun 2013 berada di bawah 10%.",
+        "E": "Terjadi lonjakan angka inflasi yang tidak tergerus daya beli."
+      }
+    },
+    {
+      "number": 10,
+      "text": "Berdasarkan Tabel 1, berapakah selisih pertumbuhan investasi antara tahun 2012 dan tahun 2008?",
+      "options": {
+        "A": "1,8%",
+        "B": "4,2%",
+        "C": "6,6%",
+        "D": "8,2%",
+        "E": "9,3%"
+      }
+    },
+    {
+      "number": 11,
+      "text": "Berdasarkan paragraf 1, manakah pernyataan yang BENAR?",
+      "options": {
+        "A": "Tsunami hanya terjadi di daerah yang dekat dengan pantai.",
+        "B": "Tsunami adalah perpindahan badan air yang disebabkan oleh perubahan permukaan laut secara vertikal dengan tiba-tiba.",
+        "C": "Gelombang tsunami dapat merambat ke daerah pegunungan.",
+        "D": "Sekitar 90% tsunami terjadi karena ulah manusia.",
+        "E": "Gempa bumi yang terjadi di daratan dapat menyebabkan tsunami."
+      }
+    },
+    {
+      "number": 12,
+      "text": "Berdasarkan paragraf 1, jika tidak terjadi gangguan yang menyebabkan perpindahan sejumlah besar air, seperti letusan gunung api, gempa bumi, longsor, maupun meteor yang jatuh ke bumi, maka simpulan yang BENAR adalah?",
+      "options": {
+        "A": "Tsunami tidak akan menuju daerah yang jauh dari pantai.",
+        "B": "Tsunami hanya menerjang daerah yang dekat pantai.",
+        "C": "Tsunami tidak akan terjadi karena tidak ada faktor penyebabnya.",
+        "D": "Tsunami tidak akan terjadi jika tidak ada meteor jatuh ke bumi.",
+        "E": "Tsunami merusak infrastruktur pantai."
+      }
+    },
+    {
+      "number": 13,
+      "text": "Berdasarkan paragraf 1, apabila di suatu daerah terjadi tsunami, manakah di bawah ini simpulan yang PALING MUNGKIN BENAR?",
+      "options": {
+        "A": "Tsunami disebabkan oleh gempa bumi di bawah laut yang terjadi dekat daerah tersebut.",
+        "B": "Tsunami terjadi karena keteledoran manusia di daerah tersebut.",
+        "C": "Tsunami menelan banyak korban karena tidak ada sosialisasi bencana.",
+        "D": "Tsunami terjadi secara tiba-tiba dan tidak terduga.",
+        "E": "Tsunami datangnya sesuai periode tertentu."
+      }
+    },
+    {
+      "number": 14,
+      "text": "Berdasarkan paragraf 2, gerakan vertikal pada kerak bumi, dapat mengakibatkan dasar laut naik atau turun secara tiba-tiba. Manakah di bawah ini pernyataan yang BENAR?",
+      "options": {
+        "A": "Gelombang besar terjadi di laut.",
+        "B": "Gelombang berjalan semakin cepat ke daratan.",
+        "C": "Kecepatan gelombang kurang dari 50 km/jam.",
+        "D": "Gelombang laut mengalami pergerakan tidak normal.",
+        "E": "Gelombang laut mengalami gangguan kesetimbangan air yang berada di atasnya."
+      }
+    },
+    {
+      "number": 15,
+      "text": "Saat mencapai pantai, tsunami akan merayap masuk daratan jauh dari garis pantai dengan jangkauan mencapai beberapa ratus meter bahkan bisa beberapa kilometer. Uraian di atas adalah pernyataan yang terdapat pada paragraf ....",
+      "options": {
+        "A": "(1)",
+        "B": "(2)",
+        "C": "(3)",
+        "D": "(4)",
+        "E": "Semua salah"
+      }
+    },
+    {
+      "number": 16,
+      "text": "Berdasarkan paragraf ketiga, pernyataan manakah yang PALING MUNGKIN benar?",
+      "options": {
+        "A": "Gerakan horizontal ini dapat terjadi pada patahan bumi atau sesar.",
+        "B": "Lempeng benua menelusup lempeng samudra.",
+        "C": "Gempa bumi juga sering terjadi di daerah subduksi.",
+        "D": "Gelombang tinggi menyebabkan gempa.",
+        "E": "Penumpukan masa air menyebabkan tsunami."
+      }
+    },
+    {
+      "number": 17,
+      "text": "Di bawah ini yang BUKAN penyebab terjadinya tsunami pada paragraf ke-4 adalah ....",
+      "options": {
+        "A": "tanah longsor yang terjadi di dasar laut serta runtuhan gunung api",
+        "B": "dasar laut naik-turun secara tiba-tiba",
+        "C": "pasang surut air laut",
+        "D": "ukuran meteor atau longsor yang cukup besar",
+        "E": "gempa yang menyebabkan gerakan tegak lurus lapisan bumi"
+      }
+    },
+    {
+      "number": 18,
+      "text": "Berdasarkan paragraf 2 dan 3, bagaimana perubahan kecepatan dan tinggi gelombang tsunami ketika bergerak dari laut dalam menuju wilayah pantai?",
+      "options": {
+        "A": "Kecepatan meningkat dan tinggi gelombang menyusut hingga beberapa sentimeter.",
+        "B": "Kecepatan dan tinggi gelombang sama-sama menurun hingga berhenti di pantai.",
+        "C": "Kecepatan berkurang dari ratusan km/jam menjadi ~50 km/jam, namun tinggi gelombang melonjak hingga puluhan meter.",
+        "D": "Kecepatan konstan ratusan km/jam dan tinggi gelombang mencapai ribuan meter.",
+        "E": "Kecepatan berubah menjadi nol dan energi gelombang terserap seluruhnya oleh dasar laut."
+      }
+    },
+    {
+      "number": 19,
+      "text": "Apabila sebuah wilayah pesisir tidak berada di dekat patahan bumi (sesar) dan tidak berada pada zona subduksi lempeng, simpulan manakah yang paling TEPAT berdasarkan teks?",
+      "options": {
+        "A": "Wilayah tersebut sama sekali tidak bisa terdampak tsunami oleh sebab apa pun.",
+        "B": "Potensi tsunami akibat gempa pergeseran lempeng di wilayah tersebut minim, namun tsunami masih bisa terpicu oleh faktor lain seperti meteor atau longsor bawah laut.",
+        "C": "Wilayah tersebut pasti akan diterjang tsunami letusan gunung api setiap bulan.",
+        "D": "Kecepatan gelombang tsunami di wilayah tersebut dipastikan selalu di atas 1.000 km/jam.",
+        "E": "Gempa bumi darat di wilayah tersebut akan berubah menjadi erosi pantai."
+      }
+    },
+    {
+      "number": 20,
+      "text": "Mengapa gelombang tsunami di pantai memiliki energi yang sangat merusak meskipun kecepatannya telah berkurang menjadi sekitar 50 km/jam?",
+      "options": {
+        "A": "Karena adanya penumpukan masa air yang besar sehingga gelombang menjulang tinggi hingga puluhan meter.",
+        "B": "Karena air laut di pantai bercampur dengan material lahar dingin gunung berapi.",
+        "C": "Karena angin pantai mendorong gelombang dengan kecepatan supersonic.",
+        "D": "Karena gravitasi daratan menarik massa air laut secara mendadak.",
+        "E": "Karena kedalaman air pantai jauh lebih dalam daripada laut lepas."
+      }
+    },
+    {
+      "number": 21,
+      "text": "Berdasarkan teks di atas, manakah pernyataan tentang Kepler-22b yang BENAR?",
+      "options": {
+        "A": "Kepler-22b mengelilingi Matahari dalam waktu 290 hari.",
+        "B": "Kepler-22b berjarak 600 triliun kilometer dari Bumi.",
+        "C": "Kepler-22b berukuran 2,4 kali lebih besar dari Bumi dan mengorbit bintang Kepler 22.",
+        "D": "Kepler-22b telah dipastikan 100% sebagai planet batuan padat.",
+        "E": "Manusia dapat mencapai Kepler-22b dalam waktu 22 tahun dengan teknologi saat ini."
+      }
+    },
+    {
+      "number": 22,
+      "text": "Berdasarkan paragraf 3, jika Kepler-22b ternyata merupakan planet gas raksasa, simpulan yang PALING MUNGKIN BENAR adalah ....",
+      "options": {
+        "A": "Manusia dapat dengan mudah membangun pemukiman di daratannya.",
+        "B": "Manusia akan sulit untuk hidup di sana.",
+        "C": "Waktu revolusi planet akan berubah otomatis menjadi 365 hari.",
+        "D": "Jarak planet ke Bumi menyusut menjadi kurang dari 100 tahun cahaya.",
+        "E": "Suhu permukaan planet dipastikan turun di bawah nol celsius."
+      }
+    },
+    {
+      "number": 23,
+      "text": "Mengapa perjalanan manusia menuju Kepler-22b dikatakan masih sebatas mimpi dengan teknologi yang ada saat ini?",
+      "options": {
+        "A": "Karena Kepler-22b tidak memiliki gravitasi.",
+        "B": "Karena jarak 600 tahun cahaya membutuhkan waktu perjalanan sekitar 22 juta tahun dengan teknologi sekarang.",
+        "C": "Karena temperatur permukaan Kepler-22b mencapai ribuan derajat celsius.",
+        "D": "Karena NASA belum dapat menentukan posisi koordinat bintang Kepler 22.",
+        "E": "Karena atmosfer Kepler-22b didominasi oleh gas beracun."
+      }
+    },
+    {
+      "number": 24,
+      "text": "Berapa jumlah kandidat planet layak huni temuan Kepler SEBELUM diumumkannya penambahan kandidat baru oleh NASA pada pengumuman tersebut?",
+      "options": {
+        "A": "1.094 kandidat",
+        "B": "1.232 kandidat",
+        "C": "2.326 kandidat",
+        "D": "3.420 kandidat",
+        "E": "600 kandidat"
+      }
+    },
+    {
+      "number": 25,
+      "text": "Berdasarkan kalimat pada paragraf kedua, frasa yang paling tepat untuk mengisi bagian rumpang [...] pada kalimat '...maka temperatur di planet itu [...] 22 derajat celsius' adalah ....",
+      "options": {
+        "A": "dipastikan lebih dingin dari",
+        "B": "disebabkan oleh",
+        "C": "adalah sekitar",
+        "D": "berkurang hingga",
+        "E": "tidak mungkin"
+      }
+    },
+    {
+      "number": 26,
+      "text": "Andi berangkat dari kota A menuju kota B dengan kendaraan bermotor. Jika tanpa istirahat, perjalanan ditempuh dalam 4 jam. Tepat di tengah perjalanan (setelah menempuh setengah jarak), Andi beristirahat selama 5 menit, lalu melanjutkan perjalanan dengan kecepatan yang sama. Berapa lama waktu yang dibutuhkan Andi hingga sampai di kota B?",
+      "options": {
+        "A": "4 jam 5 menit",
+        "B": "4 jam 10 menit",
+        "C": "4 jam 15 menit",
+        "D": "4 jam 20 menit",
+        "E": "Tidak pernah sampai"
+      }
+    },
+    {
+      "number": 27,
+      "text": "Rani berangkat dari negara I menuju negara M, sedangkan Maya berangkat dari negara M menuju negara I. Perjalanan dari negara I ke negara M, maupun sebaliknya, membutuhkan waktu 4 jam. Waktu di negara I 1 jam lebih cepat daripada waktu di negara M. Rani dan Maya berangkat pada saat yang bersamaan, yaitu pukul 14.00 waktu negara I. Pada pukul berapakah Maya tiba di negara I (menurut waktu negara I)?",
+      "options": {
+        "A": "6 sore",
+        "B": "7 malam",
+        "C": "8 malam",
+        "D": "9 malam",
+        "E": "10 malam"
+      }
+    },
+    {
+      "number": 28,
+      "text": "Umur rata-rata gabungan siswa kelas X dan XI adalah 16,5 tahun. Jika umur rata-rata siswa kelas X adalah 16 tahun dan umur rata-rata siswa kelas XI adalah 17 tahun, maka perbandingan banyaknya siswa kelas X dan banyaknya siswa kelas XI adalah ....",
+      "options": {
+        "A": "1 : 1",
+        "B": "1 : 2",
+        "C": "2 : 1",
+        "D": "2 : 3",
+        "E": "3 : 2"
+      }
+    },
+    {
+      "number": 29,
+      "text": "Gilang baru masuk SMU kelas X dan dia diberitahu baju seragam apa yang harus digunakannya sepanjang seminggu (Senin–Sabtu). Ada 4 macam pakaian yang harus digunakan sepanjang 6 hari sekolah: (1) Baju putih tanpa badge - celana biru, (2) Kemeja putih dengan badge - celana abu-abu, (3) Kemeja batik - celana biru, (4) Baju olahraga putih - celana abu-abu. Ketentuan: 1) Gilang harus memakai kemeja batik - celana biru 2 kali seminggu. 2) Baju seragam dengan kemeja putih tidak dipakai 2 hari berturut-turut. 3) Baju olahraga putih - celana abu-abu dipakai hanya 1 hari menjelang Sabtu (Jumat). 4) Baju putih tanpa badge - celana biru dipakai 2 kali seminggu. 5) Tiap hari Senin memakai kemeja putih dengan badge - celana abu-abu. Manakah di antara pernyataan ini yang BENAR?",
+      "options": {
+        "A": "Seragam dengan celana abu-abu selalu digunakan berurutan.",
+        "B": "Seragam dengan celana biru hanya digunakan 2 kali seminggu.",
+        "C": "Seragam dengan celana biru digunakan tiap hari.",
+        "D": "Seragam dengan celana biru digunakan 3 hari berturut-turut.",
+        "E": "Seragam dengan celana biru paling jarang digunakan."
+      }
+    },
+    {
+      "number": 30,
+      "text": "Seorang ibu membeli buah di pasar dengan kriteria murah dan segar. Dari lima macam buah (anggur, belimbing, ceri, duku, pisang) diperoleh data: - Harga anggur > ceri; Ceri lebih segar dari pisang. - Harga ceri > belimbing; Belimbing lebih segar dari duku. - Harga belimbing > duku; Duku lebih segar dari anggur. - Harga duku > pisang; Belimbing lebih tidak segar dari ceri. Jika ibu tersebut akan memilih dua buah yang PALING MURAH dan yang PALING SEGAR, maka yang akan dipilih berturut-turut adalah ....",
+      "options": {
+        "A": "pisang dan ceri",
+        "B": "pisang dan belimbing",
+        "C": "belimbing dan duku",
+        "D": "anggur dan ceri",
+        "E": "duku dan ceri"
+      }
+    }
+  ]
+}
