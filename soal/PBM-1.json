@@ -1,304 +1,257 @@
 {
-  "judul": "Soal Latihan Pemahaman Bacaan dan Menulis (PBM)",
-  "format_penanda": "Markdown (**bold**, *italic*, ***bold-italic***)",
-  "total_soal": 20,
-  "bacaan": [
+  "title": "PAKET 1 PBM",
+  "subtest": "PEMAHAMAN BACAAN DAN MENULIS (PBM)",
+  "reading_texts": [
     {
-      "id": 1,
-      "petunjuk": "*Tulisan berikut digunakan untuk menjawab soal nomor 1 sampai dengan 8.*",
-      "teks": "¹Tren teknologi masa kini yang paling banyak digunakan ialah *internet of things* (IoT). ²IoT merupakan sistem internet yang menghubungkan objek fisik dengan manusia. ³Salah satu perusahaan yang [...] produk bersistem IoT ialah DycodeX. ⁴Mereka punya produk teknologi berbasis IoT bernama SmarTernak yang menjadikan sapi sebagai objeknya. ⁵Sapi tidak dapat memberi tahu secara langsung kepada peternak mengenai kondisinya sehingga harus selalu dicek setiap waktu. ⁶\"Hal itu sangat tidak efisien [...] sebuah peternakan memiliki banyak sapi. ⁷\"Sapi tersebut sedang sakit atau tidak atau mungkin saja sedang berahi, kita tidak tahu pasti,\" ujar Andri Yadi, *Co-Founder* dan CEO DycodeX. ⁸\"Masalah seperti itu bisa teratasi jika setiap sapi dikalungi sebuah alat.\n\n⁹Alat berbentuk kotak kecil yang dikalungkan pada sapi sudah berisi sistem IoT. ¹⁰Peternakan yang sudah menjalankan program SmarTernak ini dapat mendeteksi jika sapi bermasalah. ¹¹Bukan hanya mengecek sakit atau tidak, peternak juga dapat memantau produktivitas sapi dari gerakannya. ¹²Jika sehat namun diam saja, maka sapi sedang tidak produktif. ¹³Dapat diketahui juga keadaan sapi dari seberapa sering sapi mengunyah makanannya.\n\n¹⁴\"Sapi yang dibebaskan juga bisa kita ketahui keberadaan mereka. ¹⁵Kita pasang pagar virtual sehingga begitu sapi melewati satu koordinat tertentu, walau pagar tidak berbentuk dan tidak kelihatan, alat ini akan berbunyi dan sapi sudah tahu bahwa dia harus balik lagi. ¹⁶Jadi memang seperti menggiring sapi juga, sebab ada GPS terpasang,\" papar Andri."
+      "id": "TEKS_1",
+      "title": "TEKS 1",
+      "description": "Teks berikut ini digunakan untuk menjawab soal nomor 1 sampai dengan 8.",
+      "content_paragraphs": [
+        "¹Tren teknologi masa kini yang paling banyak digunakan ialah internet of things (IoT). ²IoT merupakan sistem internet yang menghubungkan objek fisik dengan manusia. ³Salah satu perusahaan yang [...] produk bersistem IoT ialah DycodeX. ⁴Mereka punya produk teknologi berbasis IoT bernama SmarTernak yang menjadikan sapi sebagai objeknya. ⁵Sapi tidak dapat memberi tahu secara langsung kepada peternak mengenai kondisinya sehingga harus selalu dicek setiap waktu. ⁶\"Hal itu sangat tidak efisien [...] sebuah peternakan memiliki banyak sapi. ⁷\"Sapi tersebut sedang sakit atau tidak atau mungkin saja sedang berahi, kita tidak tahu pasti,\" ujar Andri Yadi, Co-Founder dan CEO DycodeX. ⁸\"Masalah seperti itu bisa teratasi jika setiap sapi dikalungi sebuah alat.",
+        "⁹Alat berbentuk kotak kecil yang dikalungkan pada sapi sudah berisi sistem IoT. ¹⁰Peternakan yang sudah menjalankan program SmarTernak ini dapat mendeteksi jika sapi bermasalah. ¹¹Bukan hanya mengecek sakit atau tidak, peternak juga dapat memantau produktivitas sapi dari gerakannya. ¹²Jika sehat namun diam saja, maka sapi sedang tidak produktif. ¹³Dapat diketahui juga keadaan sapi dari seberapa sering sapi mengunyah makanannya.",
+        "¹⁴\"Sapi yang dibebaskan juga bisa kita ketahui keberadaan mereka. ¹⁵Kita pasang pagar virtual sehingga begitu sapi melewati satu koordinat tertentu, walau pagar tidak berbentuk dan tidak kelihatan, alat ini akan berbunyi dan sapi sudah tahu bahwa dia harus balik lagi. ¹⁶Jadi memang seperti menggiring sapi juga, sebab ada GPS terpasang,\" papar Andri."
+      ]
     },
     {
-      "id": 2,
-      "petunjuk": "*Tulisan berikut digunakan untuk menjawab soal nomor 9 sampai dengan 16.*",
-      "teks": "¹Untuk pertama kalinya, para peneliti di Universitas Pennsylvania mengaitkan penggunaan media sosial dengan peningkatan depresi dan kesepian. ²Hal tersebut telah menjadi pembahasan para peneliti selama bertahun-tahun, tetapi belum banyak kajian yang berhasil menemukan kaitan keduanya. ³Universitas Pennsylvania melakukan hal yang berbeda, yaitu memusatkan studi tersebut pada tiga media sosial: Facebook, Snapchat, dan Instagram.\n\n⁴Partisipan dibagi ke dalam dua kelompok. ⁵Kelompok pertama melakukan kebiasaan menggunakan media sosial, sedangkan kelompok kedua mengakses media sosial hanya 10 menit setiap hari. ⁶Media sosial berkaitan dengan media daring yang penggunanya dapat menciptakan konten meliputi blog, jejaring sosial, dan lain-lain. ⁷Aktivitas media sosial mereka dipantau selama tiga minggu. ⁸Setelah itu, para peserta akan ditanya kembali mengenai beberapa hal, seperti soal kekhawatiran akan rasa kehilangan, kecemasan, depresi dan kesepian. ⁹Hasil penelitian menunjukkan bahwa ada hubungan yang sangat kuat dan jelas antara penggunaan media sosial dengan peningkatan depresi dan kesepian. ¹⁰Ada dua hal utama yang membuat media sosial dapat menimbulkan rasa depresi dan kesepian. ¹¹Pertama, media sosial menimbulkan perbandingan sosial ke arah negatif. ¹²Seseorang yang akan merasa ditinggalkan atau dikucilkan saat ia melihat orang lain di media sosial bersenang-senang. ¹³Kedua, ketika mengakses media sosial dan menghabiskan setiap menitnya, orang yang candu pada media sosial akan menjauh dari orang-orang di sekitarnya."
+      "id": "TEKS_2",
+      "title": "TEKS 2",
+      "description": "Teks berikut ini digunakan untuk menjawab soal nomor 9 sampai dengan 16.",
+      "content_paragraphs": [
+        "¹Untuk pertama kalinya, para peneliti di Universitas Pennsylvania mengaitkan penggunaan media sosial dengan peningkatan depresi dan kesepian. ²Hal tersebut telah menjadi pembahasan para peneliti selama bertahun-tahun, tetapi belum banyak kajian yang berhasil menemukan kaitan keduanya. ³Universitas Pennsylvania melakukan hal yang berbeda, yaitu memusatkan studi tersebut pada tiga media sosial: Facebook, Snapchat, dan Instagram.",
+        "⁴Partisipan dibagi ke dalam dua kelompok. ⁵Kelompok pertama melakukan kebiasaan menggunakan media sosial, sedangkan kelompok kedua mengakses media sosial hanya 10 menit setiap hari. ⁶Media sosial berkaitan dengan media daring yang penggunanya dapat menciptakan konten meliputi blog, jejaring sosial, dan lain-lain. ⁷Aktivitas media sosial mereka dipantau selama tiga minggu. ⁸Setelah itu, para peserta akan ditanya kembali mengenai beberapa hal, seperti soal kekhawatiran akan rasa kehilangan, kecemasan, depresi dan kesepian. ⁹Hasil penelitian menunjukkan bahwa ada hubungan yang sangat kuat dan jelas antara penggunaan media sosial dengan peningkatan depresi dan kesepian. ¹⁰Ada dua hal utama yang membuat media sosial dapat menimbulkan rasa depresi dan kesepian. ¹¹Pertama, media sosial menimbulkan perbandingan sosial ke arah negatif. ¹²Seseorang yang akan merasa ditinggalkan atau dikucilkan saat ia melihat orang lain di media sosial bersenang-senang. ¹³Kedua, ketika mengakses media sosial dan menghabiskan setiap menitnya, orang yang candu pada media sosial akan menjauh dari orang-orang di sekitarnya."
+      ]
     },
     {
-      "id": 3,
-      "petunjuk": "***Tulisan berikut digunakan untuk menjawab soal nomor 17 sampai dengan 20. Pertimbangkan apakah kata atau kalimat bercetak tebal pada setiap nomor tidak perlu diperbaiki (A) atau diganti dengan pilihan lain yang tersedia (B, C, D, atau E).***",
-      "teks": "Angklung adalah alat musik khas Sunda yang terbuat dari bambu. Kata ³⁹**'angklung'** berasal dari bahasa Sunda yang merupakan tiruan bunyi \"klung\" yang dihasilkan instrumen bambu ini. Alat musik itu ³⁷**merupakan** pengembangan dari alat musik calung yang dimainkan dengan cara digoyang. ³⁸**Maka,** cara menggoyang angklung akan menentukan kuat lemahnya bunyi yang dihasilkan.\n\nUNESCO telah menetapkan angklung sebagai salah satu warisan budaya lisan dan nonbendawi. Salah satu tempat yang masih melestarikan kebudayaan angklung adalah Saung Udjo. ⁴⁰**Di sanggar ini tidak hanya dapat melihat berbagai jenis angklung, tetapi juga belajar proses pembuatan angklung.**"
+      "id": "TEKS_3",
+      "title": "TEKS 3",
+      "description": "Teks berikut ini digunakan untuk menjawab soal nomor 17 sampai dengan 20.",
+      "content_paragraphs": [
+        "Pertimbangkan apakah kata atau kalimat bercetak tebal pada setiap nomor tidak perlu diperbaiki (A) atau diganti dengan pilihan lain yang tersedia (B, C, D, atau E).",
+        "Angklung adalah alat musik khas Sunda yang terbuat dari bambu. Kata ³⁹‘ANGKLUNG’ berasal dari bahasa Sunda yang merupakan tiruan bunyi \"klung\" yang dihasilkan instrumen bambu ini. Alat musik itu ³⁷MERUPAKAN pengembangan dari alat musik calung yang dimainkan dengan cara digoyang. ³⁸MAKA, cara menggoyang angklung akan menentukan kuat lemahnya bunyi yang dihasilkan.",
+        "UNESCO telah menetapkan angklung sebagai salah satu warisan budaya lisan dan nonbendawi. Salah satu tempat yang masih melestarikan kebudayaan angklung adalah Saung Udjo. ⁴⁰DI SANGGAR INI TIDAK HANYA DAPAT MELIHAT BERBAGAI JENIS ANGKLUNG, TETAPI JUGA BELAJAR PROSES PEMBUATAN ANGKLUNG."
+      ]
     }
   ],
-  "soal": [
+  "questions": [
     {
-      "nomor": 1,
-      "bacaan_id": 1,
-      "pertanyaan": "Apa judul yang paling tepat untuk tulisan di atas?",
-      "pilihan_jawaban": {
-        "A": "Sistem *Internet of Things* (IoT)",
+      "number": 1,
+      "text": "Apa judul yang paling tepat untuk tulisan di atas?",
+      "options": {
+        "A": "Sistem Internet of Things (IoT)",
         "B": "Kecanggihan Teknologi IoT Masa Kini",
         "C": "Pendeteksi Kondisi SmarTernak Sapi",
         "D": "SmarTernak Pendeteksi Kondisi Sapi",
         "E": "Produk SmarTernak Buatan DycodeX"
-      },
-      "kunci_jawaban": "D",
-      "pembahasan": "Judul tulisan harus mencerminkan keseluruhan isi bacaan secara akurat dan ringkas. Bacaan secara eksplisit membahas inovasi teknologi berbasis IoT bernama SmarTernak yang diproduksi oleh DycodeX untuk mendeteksi kondisi dan produktivitas sapi. Oleh karena itu, opsi **(D)** merupakan judul yang paling tepat."
+      }
     },
     {
-      "nomor": 2,
-      "bacaan_id": 1,
-      "pertanyaan": "Anda akan menambahkan kalimat berikut pada paragraf 1.\n*Teknologi IoT memudahkan pemantauan berbagai hal tanpa kehadiran pemantau.*\nLetak yang tepat untuk kalimat tersebut adalah ....",
-      "pilihan_jawaban": {
+      "number": 2,
+      "text": "Anda akan menambahkan kalimat berikut pada paragraf 1.\n\nTeknologi IoT memudahkan pemantauan berbagai hal tanpa kehadiran pemantau.\n\nLetak yang tepat untuk kalimat tersebut adalah ....",
+      "options": {
         "A": "setelah kalimat 1",
         "B": "setelah kalimat 2",
         "C": "setelah kalimat 3",
         "D": "setelah kalimat 4",
         "E": "setelah kalimat 5"
-      },
-      "kunci_jawaban": "B",
-      "pembahasan": "Kalimat 1 menyebutkan tren IoT, dan kalimat 2 menjelaskan definisi sistem IoT yang menghubungkan objek fisik dengan manusia. Kalimat tambahan *\"Teknologi IoT memudahkan pemantauan berbagai hal tanpa kehadiran pemantau\"* berfungsi sebagai penjelas umum mengenai manfaat IoT sebelum masuk ke contoh spesifik penggunaan SmarTernak pada sapi di kalimat 3. Jadi, posisi paling logis adalah setelah kalimat 2 (opsi **B**)."
+      }
     },
     {
-      "nomor": 3,
-      "bacaan_id": 1,
-      "pertanyaan": "Kata sambung yang tepat untuk melengkapi [...] pada kalimat 6 adalah ...",
-      "pilihan_jawaban": {
+      "number": 3,
+      "text": "Kata sambung yang tepat untuk melengkapi [...] pada kalimat 6 adalah ...",
+      "options": {
         "A": "seandainya",
         "B": "mengingat",
         "C": "jika",
         "D": "untuk",
         "E": "karena"
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Kalimat 6 berbunyi: *\"Hal itu sangat tidak efisien [...] sebuah peternakan memiliki banyak sapi.\"* Hubungan antara klausa pertama (*tidak efisien*) dan klausa kedua (*sebuah peternakan memiliki banyak sapi*) adalah hubungan sebab-akibat. Konjungsi kausalitas yang paling tepat untuk melengkapi bagian rumpang tersebut adalah **karena** (opsi **E**)."
+      }
     },
     {
-      "nomor": 4,
-      "bacaan_id": 1,
-      "pertanyaan": "Agar menjadi logis, kalimat 11 harus diperbaiki dengan cara ....",
-      "pilihan_jawaban": {
-        "A": "menambahkan kata *berarti* sesudah kata *maka*",
-        "B": "menambahkan kata *sapi* sesudah kata *jika*",
-        "C": "menghilangkan kata *maka*",
-        "D": "mengganti kata *namun* dengan kata *tetapi*",
-        "E": "menghilangkan kata *sedang*"
-      },
-      "kunci_jawaban": "C",
-      "pembahasan": "Kalimat 12/11 berstruktur kondisi pengandaian: *\"Jika sehat namun diam saja, maka sapi sedang tidak produktif.\"* Penggunaan konjungsi subordinatif *jika* pada awal anak kalimat tidak boleh dipadukan dengan konjungsi *maka* pada induk kalimat karena menyebabkan kalimat menjadi rancu/redundan dan tidak efektif. Cara perbaikannya adalah dengan menghilangkan kata *maka* (opsi **C**)."
+      "number": 4,
+      "text": "Agar menjadi logis, kalimat 11 harus diperbaiki dengan cara ....",
+      "options": {
+        "A": "menambahkan kata ‘berarti’ sesudah kata ‘maka’",
+        "B": "menambahkan kata ‘sapi’ sesudah kata ‘jika’",
+        "C": "menghilangkan kata ‘maka’",
+        "D": "mengganti kata ‘namun’ dengan kata ‘tetapi’",
+        "E": "menghilangkan kata ‘sedang’"
+      }
     },
     {
-      "nomor": 5,
-      "bacaan_id": 1,
-      "pertanyaan": "Kata yang paling tepat untuk melengkapi [...] pada kalimat 3 adalah ...",
-      "pilihan_jawaban": {
+      "number": 5,
+      "text": "Kata yang paling tepat untuk melengkapi [...] pada kalimat 3 adalah ...",
+      "options": {
         "A": "melakukan",
         "B": "mengelola",
         "C": "mengerjakan",
         "D": "menggarap",
         "E": "menyediakan"
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Konstruksi kalimat 3: *\"Salah satu perusahaan yang [...] produk bersistem IoT ialah DycodeX.\"* Kata verba yang paling tepat berpasangan secara kolokasi dengan kata *produk* dalam konteks perusahaan penyedia teknologi komersial adalah **menyediakan** (opsi **E**)."
+      }
     },
     {
-      "nomor": 6,
-      "bacaan_id": 1,
-      "pertanyaan": "Kalimat manakah yang paling tepat dituliskan sebagai simpulan pada akhir tulisan?",
-      "pilihan_jawaban": {
+      "number": 6,
+      "text": "Kalimat manakah yang paling tepat dituliskan sebagai simpulan pada akhir tulisan?",
+      "options": {
         "A": "Dengan demikian, para peternak sapi dapat mengetahui keberadaan ternaknya di kandang.",
         "B": "Dapat disimpulkan bahwa teknologi SmarTernak dapat mendeteksi kondisi sapi.",
-        "C": "Berdasarkan uraian tersebut, *internet of things* dapat digunakan pada objek-objek tertentu.",
+        "C": "Berdasarkan uraian tersebut, internet of things dapat digunakan pada objek-objek tertentu.",
         "D": "Berdasarkan uraian di atas, peternakan sapi berskala besar sebaiknya menggunakan teknologi SmarTernak.",
         "E": "Jadi, sapi yang dilepas dari kandang dapat diketahui keberadaannya dengan alat SmarTernak."
-      },
-      "kunci_jawaban": "B",
-      "pembahasan": "Simpulan merupakan inti atau rangkuman gagasan dari seluruh isi teks. Teks tersebut menguraikan peran dan fungsi SmarTernak berbasis IoT dalam membantu peternak mendeteksi kondisi dan keberadaan sapi secara efektif. Simpulan yang paling mewakili gagasan ini adalah opsi **(B)**."
+      }
     },
     {
-      "nomor": 7,
-      "bacaan_id": 1,
-      "pertanyaan": "Kalimat manakah yang paling tepat untuk melengkapi paragraf 2?",
-      "pilihan_jawaban": {
+      "number": 7,
+      "text": "Kalimat manakah yang paling tepat untuk melengkapi paragraf 2?",
+      "options": {
         "A": "Alat bersistem IoT dapat digunakan pada peternakan sapi rakyat.",
         "B": "Banyak manfaat yang didatangkan dari penggunaan alat bersistem IoT tersebut.",
         "C": "Peternakan yang besar memiliki alat pendeteksi kondisi sapi.",
         "D": "Produktivitas sapi penting bagi peternak dalam menghasilkan keuntungan.",
         "E": "Pendeteksian sapi bermasalah dapat dilakukan dengan SmarTernak."
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Paragraf 2 menjelaskan keunggulan sistem SmarTernak dalam mendeteksi sapi yang sakit, memantau gerakan produktivitas, serta melacak keberadaan sapi dengan pagar virtual GPS. Kalimat yang paling tepat untuk melengkapi paragraf tersebut adalah pernyataan ringkasan pada opsi **(E)**."
+      }
     },
     {
-      "nomor": 8,
-      "bacaan_id": 1,
-      "pertanyaan": "Ilustrasi yang paling tepat untuk melengkapi penjelasan dalam tulisan adalah ....",
-      "pilihan_jawaban": {
+      "number": 8,
+      "text": "Ilustrasi yang paling tepat untuk melengkapi penjelasan dalam tulisan adalah ....",
+      "options": {
         "A": "bagan cara mendeteksi sapi dengan teknologi IoT",
         "B": "skema pembuatan alat SmarTernak",
         "C": "gambar alat pendeteksi sapi bersistem IoT",
         "D": "foto peternakan sapi yang memanfaatkan IoT",
         "E": "tabel keefektifan penggunaan alat bersistem IoT"
-      },
-      "kunci_jawaban": "A",
-      "pembahasan": "Teks berfokus pada mekanisme dan langkah kerja sistem teknologi IoT dalam mendeteksi kondisi serta lokasi sapi. Untuk memperjelas informasi alur/proses kerja teknis ini kepada pembaca, ilustrasi yang paling tepat adalah berupa *bagan cara mendeteksi sapi dengan teknologi IoT* (opsi **A**)."
+      }
     },
     {
-      "nomor": 9,
-      "bacaan_id": 2,
-      "pertanyaan": "Kata *ditanya* pada kalimat 8 harus diperbaiki menjadi ...",
-      "pilihan_jawaban": {
+      "number": 9,
+      "text": "Kata ‘ditanya’ pada kalimat 8 harus diperbaiki menjadi ...",
+      "options": {
         "A": "menanya",
         "B": "menanyakan",
         "C": "bertanya",
         "D": "ditanyakan",
         "E": "ditanyai"
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Kalimat 8: *\"...para peserta akan ditanya kembali mengenai beberapa hal...\"*. Verba pasif yang tepat berpasangan dengan objek sasaran bernyawa (para peserta) yang diberikan pertanyaan adalah **ditanyai** (Bentuk aktif: *menanyai seseorang tentang sesuatu* -> Pasif: *seseorang ditanyai tentang sesuatu*). Kata *ditanyakan* digunakan jika subjek pasifnya adalah materi/hal pertanyaan itu sendiri (opsi **E**)."
+      }
     },
     {
-      "nomor": 10,
-      "bacaan_id": 2,
-      "pertanyaan": "Diperlukan sebuah paragraf antara kalimat 3 dan 4. Gagasan pokok paragraf yang paling tepat adalah...",
-      "pilihan_jawaban": {
+      "number": 10,
+      "text": "Diperlukan sebuah paragraf antara kalimat 3 dan 4. Gagasan pokok paragraf yang paling tepat adalah...",
+      "options": {
         "A": "alasan pemilihan tiga media sosial",
         "B": "prosedur pemilihan tiga media sosial",
         "C": "dampak pemilihan tiga media sosial",
         "D": "hasil penelitian tiga media sosial",
         "E": "metode penelitian tiga media sosial"
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Kalimat 3 mengumumkan fokus penelitian pada tiga media sosial, sedangkan kalimat 4 langsung membahas pembagian partisipan eksperimen. Di antara kalimat 3 dan 4 diperlukan paragraf transisi metodologis yang menerangkan desain atau metode penelitian secara komprehensif (opsi **E**)."
+      }
     },
     {
-      "nomor": 11,
-      "bacaan_id": 2,
-      "pertanyaan": "Kalimat yang tidak diperlukan dalam tulisan di atas adalah ...",
-      "pilihan_jawaban": {
+      "number": 11,
+      "text": "Kalimat yang tidak diperlukan dalam tulisan di atas adalah ...",
+      "options": {
         "A": "kalimat 3",
         "B": "kalimat 4",
         "C": "kalimat 6",
         "D": "kalimat 8",
         "E": "kalimat 12"
-      },
-      "kunci_jawaban": "C",
-      "pembahasan": "Kalimat 6 berbunyi: *\"Media sosial berkaitan dengan media daring yang penggunanya dapat menciptakan konten meliputi blog, jejaring sosial, dan lain-lain.\"* Kalimat ini menyajikan definisi umum media sosial yang menyimpang dari konteks alur pelaporan tahapan eksperimen terhadap partisipan di paragraf 2 (sumbang/inkoheren), sehingga tidak diperlukan (opsi **C**)."
+      }
     },
     {
-      "nomor": 12,
-      "bacaan_id": 2,
-      "pertanyaan": "Manakah hasil penggabungan yang paling tepat dari kalimat 4 dan kalimat 5?",
-      "pilihan_jawaban": {
+      "number": 12,
+      "text": "Manakah hasil penggabungan yang paling tepat dari kalimat 4 dan kalimat 5?",
+      "options": {
         "A": "Partisipan dibagi ke dalam dua kelompok, yaitu kelompok yang melakukan kebiasaan menggunakan media sosial dan kelompok yang mengakses media sosial hanya 10 menit setiap hari.",
         "B": "Partisipan dibagi ke dalam dua kelompok, yaitu kelompok pertama melakukan kebiasaan menggunakan media sosial, sedangkan kelompok kedua yang mengakses media sosial hanya 10 menit setiap hari.",
         "C": "Partisipan dibagi ke dalam dua kelompok, yang terdiri dari kelompok yang melakukan kebiasaan menggunakan media sosial dan kelompok yang mengakses media sosial hanya 10 menit setiap hari.",
         "D": "Partisipan dibagi ke dalam kelompok yang melakukan kebiasaan menggunakan media sosial dan kelompok yang mengakses media sosial hanya 10 menit setiap hari.",
         "E": "Partisipan dibagi dua kelompok, yaitu kelompok pertama melakukan kebiasaan menggunakan media sosial dan kelompok kedua mengakses media sosial hanya 10 menit setiap hari."
-      },
-      "kunci_jawaban": "A",
-      "pembahasan": "Penggabungan kalimat 4 dan 5 harus membentuk kalimat yang padu, hemat kata, dan memiliki kesejajaran struktur klausa penjelas. Opsi **(A)** menyatukan ide pembagian partisipan secara tepat dengan kata perincian *yaitu* tanpa menimbulkan redundansi atau ambiguitas subjek."
+      }
     },
     {
-      "nomor": 13,
-      "bacaan_id": 2,
-      "pertanyaan": "Paragraf 2 seharusnya terdiri atas dua paragraf. Kalimat yang seharusnya merupakan awal paragraf 3 adalah",
-      "pilihan_jawaban": {
+      "number": 13,
+      "text": "Paragraf 2 seharusnya terdiri atas dua paragraf. Kalimat yang seharusnya merupakan awal paragraf 3 adalah",
+      "options": {
         "A": "kalimat 6",
         "B": "kalimat 7",
         "C": "kalimat 8",
         "D": "kalimat 9",
         "E": "kalimat 10"
-      },
-      "kunci_jawaban": "E",
-      "pembahasan": "Paragraf 2 fokus membahas prosedur dan hasil eksperimen. Kalimat 10 (*\"Ada dua hal utama yang membuat media sosial dapat menimbulkan rasa depresi dan kesepian\"*) menandai perpindahan topik utama menuju penjelasan faktor penyebab/alasan depresi. Oleh sebab itu, kalimat 10 sangat tepat dijadikan awal paragraf baru (Paragraf 3) (opsi **E**)."
+      }
     },
     {
-      "nomor": 14,
-      "bacaan_id": 2,
-      "pertanyaan": "Kalimat manakah yang merupakan perbaikan kalimat 12?",
-      "pilihan_jawaban": {
+      "number": 14,
+      "text": "Kalimat manakah yang merupakan perbaikan kalimat 12?",
+      "options": {
         "A": "Seseorang merasa ditinggalkan atau dikucilkan saat ia melihat orang lain di media sosial bersenang-senang.",
         "B": "Seseorang akan merasa ditinggalkan atau dikucilkan saat dirinya melihat orang lain di media sosial bersenang-senang.",
         "C": "Seseorang merasa ditinggalkan atau dikucilkan saat melihat orang lain di media sosial bersenang-senang.",
         "D": "Seseorang yang merasa ditinggalkan atau dikucilkan saat melihat orang lain di media sosial bersenang-senang.",
         "E": "Seseorang yang merasa ditinggalkan atau dikucilkan saat ia melihat orang lain di media sosial bersenang-senang."
-      },
-      "kunci_jawaban": "C",
-      "pembahasan": "Kalimat 12 asli: *\"Seseorang yang akan merasa ditinggalkan atau dikucilkan saat ia melihat orang lain di media sosial bersenang-senang.\"* Kalimat tersebut tidak berpredikat karena keberadaan kata *yang* di depan frasa verba utama, serta terdapat redundansi pronomina *ia*. Perbaikan kalimat yang efektif adalah menghilangkan kata *yang* dan pronomina *ia* seperti pada opsi **(C)**."
+      }
     },
     {
-      "nomor": 15,
-      "bacaan_id": 2,
-      "pertanyaan": "Kalimat manakah yang dapat ditambahkan pada paragraf 1?",
-      "pilihan_jawaban": {
+      "number": 15,
+      "text": "Kalimat manakah yang dapat ditambahkan pada paragraf 1?",
+      "options": {
         "A": "Facebook adalah sebuah layanan jejaring sosial yang memiliki lebih dari satu miliar pengguna aktif.",
         "B": "Depresi adalah gangguan suasana hati yang dapat memengaruhi pola pikir, perasaan, dan cara menghadapi aktivitas sehari-hari.",
         "C": "Para peneliti itu telah melakukan penelitian tentang hubungan media sosial dengan depresi dan kesepian.",
         "D": "Penyebab depresi dan kesepian bervariasi serta meliputi faktor sosial, mental, emosional, dan fisik.",
         "E": "Untuk itu, sebaiknya masyarakat bijak dalam menggunakan media sosial agar terhindar dari dampak negatif."
-      },
-      "kunci_jawaban": "C",
-      "pembahasan": "Paragraf 1 mengantarkan konteks awal penelitian Universitas Pennsylvania. Kalimat tambahan yang paling padu untuk memperkuat konteks paragraf 1 adalah kalimat yang menegaskan kegiatan penelitian para ahli tersebut mengenai hubungan media sosial dengan depresi (opsi **C**)."
+      }
     },
     {
-      "nomor": 16,
-      "bacaan_id": 2,
-      "pertanyaan": "Jika informasi di bawah ini ditambahkan dalam paragraf 2, kalimat manakah yang akan melemahkan argumen pada paragraf tersebut?",
-      "pilihan_jawaban": {
+      "number": 16,
+      "text": "Jika informasi di bawah ini ditambahkan dalam paragraf 2, kalimat manakah yang akan melemahkan argumen pada paragraf tersebut?",
+      "options": {
         "A": "Penggunaan media sosial yang tidak bijak berdampak negatif bagi penggunanya.",
         "B": "Media sosial dapat memberikan dampak positif kepada penggunanya.",
         "C": "Perasaan dikucilkan muncul ketika seseorang melihat orang berbahagia dimedia sosial.",
         "D": "Peningkatan depresi dan kesepian terjadi karena penggunaan media sosial yang berlebihan.",
         "E": "Pencandu media sosial dapat melupakan orang-orang di sekitarnya."
-      },
-      "kunci_jawaban": "B",
-      "pembahasan": "Argumen pada paragraf 2 menekankan bahwa media sosial dapat memicu dampak negatif berupa perbandingan sosial negatif, depresi, dan kesepian. Pernyataan bahwa *\"Media sosial dapat memberikan dampak positif kepada penggunanya\"* bertentangan dengan arah argumen paragraf dan bersifat melemahkan (*counter-argument*) (opsi **B**)."
+      }
     },
     {
-      "nomor": 17,
-      "bacaan_id": 3,
-      "pertanyaan": "³⁷**merupakan**",
-      "pilihan_jawaban": {
+      "number": 17,
+      "text": "³⁷merupakan",
+      "options": {
         "A": "TIDAK PERLU DIPERBAIKI",
         "B": "sebagai",
         "C": "ialah",
         "D": "yaitu",
         "E": "yakni"
-      },
-      "kunci_jawaban": "A",
-      "pembahasan": "Kata *merupakan* digunakan sebagai verba kopula/predikatif untuk menghubungkan subjek dengan pelengkap definisi. Penggunaannya dalam kalimat *\"Alat musik itu merupakan pengembangan dari alat musik calung...\"* sudah tepat secara gramatikal sehingga **TIDAK PERLU DIPERBAIKI** (opsi **A**)."
+      }
     },
     {
-      "nomor": 18,
-      "bacaan_id": 3,
-      "pertanyaan": "³⁸**Maka,**",
-      "pilihan_jawaban": {
+      "number": 18,
+      "text": "³⁸Maka,",
+      "options": {
         "A": "TIDAK PERLU DIPERBAIKI",
         "B": "Oleh karena itu,",
         "C": "Jadi,",
         "D": "Sehingga,",
         "E": "Maka dari itu,"
-      },
-      "kunci_jawaban": "B",
-      "pembahasan": "Kata *Maka* merupakan konjungsi intrakalimat (sebab-akibat) yang tidak baku diletakkan di awal kalimat setelah tanda titik. Untuk menghubungkan dua kalimat yang menyatakan simpulan/akibat, konjungsi antarkalimat yang resmi dan baku menurut kaidah ejaan bahasa Indonesia adalah **Oleh karena itu,** (opsi **B**)."
+      }
     },
     {
-      "nomor": 19,
-      "bacaan_id": 3,
-      "pertanyaan": "³⁹**'angklung'**",
-      "pilihan_jawaban": {
+      "number": 19,
+      "text": "³⁹‘angklung’",
+      "options": {
         "A": "TIDAK PERLU DIPERBAIKI",
-        "B": "'angklung '",
+        "B": "‘angklung ’",
         "C": "Angklung",
         "D": "\"angklung\"",
         "E": "Angklung"
-      },
-      "kunci_jawaban": "D",
-      "pembahasan": "Berdasarkan pedoman ejaan bahasa Indonesia, kata atau istilah yang memiliki penekanan arti khusus atau diistilahkan dalam kalimat diapit oleh tanda petik ganda (\"...\"), bukan tanda petik tunggal ('...'). Maka penulisan yang benar adalah **\"angklung\"** (opsi **D**)."
+      }
     },
     {
-      "nomor": 20,
-      "bacaan_id": 3,
-      "pertanyaan": "⁴⁰**Di sanggar ini tidak hanya dapat melihat berbagai jenis angklung, tetapi juga belajar proses pembuatan angklung**",
-      "pilihan_jawaban": {
+      "number": 20,
+      "text": "⁴⁰Di sanggar ini tidak hanya dapat melihat berbagai jenis angklung, tetapi juga belajar proses pembuatan angklung",
+      "options": {
         "A": "TIDAK PERLU DIPERBAIKI",
         "B": "Di sanggar ini pengunjung tidak hanya dapat melihat berbagai jenis angklung, tetapi juga belajar proses pembuatan angklung.",
         "C": "Di sanggar ini pengunjung tidak hanya dapat melihat berbagai jenis angklung, tetapi pengunjung juga belajar proses pembuatan angklung.",
         "D": "Di sanggar ini tidak hanya dapat melihat berbagai jenis angklung, tetapi pengunjung juga belajar proses pembuatan angklung.",
         "E": "Di sanggar ini tidak hanya dapat dilihat berbagai jenis angklung, tetapi pengunjung belajar proses pembuatan angklung."
-      },
-      "kunci_jawaban": "B",
-      "pembahasan": "Kalimat asli *\"Di sanggar ini tidak hanya dapat melihat...\"* memiliki kelemahan struktur yaitu tidak memiliki Subjek (rumpang). Perbaikannya adalah menyisipkan subjek *pengunjung* dan menggunakan konjungsi korelatif yang setara *tidak hanya..., tetapi juga...* sehingga menjadi kalimat yang efektif dan gramatikal (opsi **B**)."
+      }
     }
   ]
 }
