@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin – Atur Soal Aktif</title>
+<style>
+:root{--navy:#1e3a5f;--navy-dark:#152b47;--slate:#3d5a80;--amber:#e8a33d;--paper:#f7f5f0;--paper-2:#eeebe3;--ink:#26313f;--ink-soft:#5a6a7a;--line:#d8d2c4;--white:#fff;--ok:#2f7a4f;--bad:#b3372f}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--slate:#8fb0dc;--paper:#1d2b46;--paper-2:#0e1728;--ink:#e6ecf5;--ink-soft:#9aabc4;--line:#2c3d5e;--white:#15213a;--ok:#5fc08a;--bad:#ef8f86}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Segoe UI",Verdana,Tahoma,sans-serif;background:var(--paper-2);color:var(--ink);line-height:1.5}
+button{font-family:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+header{background:linear-gradient(135deg,var(--navy),var(--navy-dark));color:#fff;border-bottom:3px solid var(--amber);padding:14px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header h1{margin:0;font-size:18px;flex:1;min-width:200px}
+header small{display:block;font-weight:400;color:#c7d3e0;font-size:12px;margin-top:2px}
+.lnk{color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:8px 14px;text-decoration:none;font-size:14px;font-weight:600}
+.lnk:hover{background:rgba(255,255,255,.15)}
+main{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+.bar{position:sticky;top:0;z-index:5;background:var(--paper-2);padding:8px 0 12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.sum{font-weight:700;font-size:15px;flex:1;min-width:180px}
+.sum span{color:var(--ink-soft);font-weight:400;font-size:13px}
+.btn{border:0;border-radius:9px;padding:10px 16px;font-size:14px;font-weight:700}
+.b1{background:var(--navy);color:#fff}
+.b2{background:var(--white);color:var(--ink);border:1.5px solid var(--slate)}
+.b3{background:var(--ok);color:#fff}
+@media (prefers-color-scheme:dark){.b1{background:var(--amber);color:#152b47}.b3{color:#0e1728}}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.grp{font-size:12px;font-weight:700;letter-spacing:.4px;color:var(--slate);margin:22px 0 8px}
+.sec{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.sh{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--paper);border-bottom:1px solid var(--line);flex-wrap:wrap}
+.sh h2{margin:0;font-size:15px;flex:1;min-width:160px}
+.sh .cnt{font-size:13px;color:var(--ink-soft)}
+.mini{background:none;border:1px solid var(--line);color:var(--ink-soft);border-radius:7px;font-size:12px;padding:4px 10px}
+.mini:hover{color:var(--ink);border-color:var(--amber)}
+.row{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px dashed var(--line);flex-wrap:wrap}
+.row:last-child{border-bottom:0}
+.row.on{background:rgba(47,122,79,.07)}
+.sw{position:relative;width:46px;height:26px;flex:none;cursor:pointer}
+.sw input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer;z-index:1}
+.sw .tr{position:absolute;inset:0;border-radius:99px;background:var(--line);transition:.15s}
+.sw .tr::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.15s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.sw input:checked+.tr{background:var(--ok)}
+.sw input:checked+.tr::after{left:23px}
+.sw input:focus-visible+.tr{outline:3px solid var(--amber);outline-offset:2px}
+.lb{width:78px;flex:none;font-size:15px}
+.st{width:130px;flex:none;font-size:12.5px;font-weight:600;color:var(--ink-soft)}
+.st.y{color:var(--ok)}.st.n{color:var(--bad)}
+.d,.t{font:inherit;font-size:13.5px;padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--ink)}
+.d{width:84px;flex:none}.t{flex:1;min-width:180px}
+.pub{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:22px}
+.pub h2{margin:0 0 6px;font-size:16px}
+.pub p{margin:0 0 12px;font-size:13.5px;color:var(--ink-soft)}
+.act{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+textarea{width:100%;font:12px/1.4 Consolas,monospace;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);resize:vertical}
+details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+summary{cursor:pointer;font-weight:700;font-size:14px}
+.gh{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
+.gh label{display:block;font-size:12.5px;font-weight:700;color:var(--ink-soft)}
+.gh input{width:100%;font:inherit;font-size:14px;padding:8px 10px;margin-top:3px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--ink)}
+.msg{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:70;width:max-content;max-width:min(92vw,640px);font-size:14px;font-weight:600;padding:11px 16px;border-radius:10px;display:none;background:var(--white);border:2px solid var(--line);box-shadow:0 8px 28px rgba(0,0,0,.3);cursor:pointer}
+.msg.show{display:block}.msg.ok{border-color:var(--ok);color:var(--ok)}.msg.err{border-color:var(--bad);color:var(--bad)}
+#dlg{position:fixed;inset:0;background:rgba(10,15,25,.55);display:grid;place-items:center;z-index:60;padding:16px}
+#dlg[hidden]{display:none}
+.dlgb{background:var(--white);border-radius:14px;max-width:440px;width:100%;padding:22px}
+.dlgb p{margin:0 0 16px;line-height:1.65;white-space:pre-line}
+.dlgb .act{margin:0;justify-content:flex-end}
+.bd{background:var(--bad);color:#fff}
+.row.del{outline:2px solid var(--bad);outline-offset:-2px}
+.warn{font-size:12.5px;color:var(--ink-soft);margin:0}
+.hint{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:8px;padding:10px 14px;font-size:13.5px;margin-bottom:6px}
+.rm{display:flex;align-items:center;gap:5px;font-size:12.5px;color:var(--bad);font-weight:600;cursor:pointer;flex:none}
+.rm input{width:16px;height:16px;accent-color:var(--bad)}
+.row.del{background:rgba(179,55,47,.08)}
+.up{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.up h3{margin:0 0 6px;font-size:14px}
+.up .ctl{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.up select,.up input[type=file]{font:inherit;font-size:13.5px;padding:7px 9px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--ink);max-width:100%}
+@media (max-width:620px){.gh{grid-template-columns:1fr}.st{width:auto}.t{flex-basis:100%}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Admin – Atur Soal yang Boleh Dikerjakan<small>TRYOUT UTBK - SNBT H2 SOLUTION</small></h1>
+  <a class="lnk" href="index.html" target="_blank" rel="noopener">Lihat halaman siswa ↗</a>
+</header>
+<main>
+  <div class="hint">Nyalakan saklar pada paket yang boleh dikerjakan siswa; paket yang mati tampil terkunci (🔒). Untuk menambah paket (mis. LBIND-7), klik <b>+ Tambah paket</b>. Untuk menghapus, centang kotak <b>hapus</b> pada paket yang dimaksud lalu klik <b>Hapus yang dicentang</b>. Paket baru otomatis dalam keadaan mati sampai Anda menyalakannya. Setelah selesai, <b>simpan</b> pengaturan agar berlaku.</div>
+  <div class="bar">
+    <div class="sum" id="sum"></div>
+    <button class="btn b2" id="allOn">Aktifkan semua</button>
+    <button class="btn b2" id="allOff">Nonaktifkan semua</button>
+  </div>
+  <div id="list"><p>Memuat daftar…</p></div>
+
+  <div class="pub">
+    <h2>Simpan pengaturan</h2>
+    <p>Hasilnya berupa file <b>soal/pengaturan.json</b>. Unggah file ini ke repository, atau simpan langsung dari sini lewat GitHub.</p>
+    <div class="act">
+      <button class="btn b1" id="dl">Unduh pengaturan.json</button>
+      <button class="btn b2" id="cp">Salin JSON</button>
+    </div>
+    <textarea id="json" readonly rows="8" aria-label="Isi pengaturan.json"></textarea>
+    <details>
+      <summary>Simpan langsung ke GitHub (opsional)</summary>
+      <p class="warn" style="margin-top:8px">Butuh <i>personal access token</i> GitHub dengan izin menulis isi repository (Contents: Read and write) hanya untuk repo ini. Token disimpan di tab ini saja dan hilang saat tab ditutup. Jangan bagikan token kepada siapa pun.</p>
+      <div class="gh">
+        <label>Pemilik (username/organisasi)<input id="gOwner" autocomplete="off" placeholder="contoh: h2solution"></label>
+        <label>Nama repository<input id="gRepo" autocomplete="off" placeholder="contoh: tryout"></label>
+        <label>Branch<input id="gBranch" autocomplete="off" value="main"></label>
+        <label>Lokasi file<input id="gPath" autocomplete="off" value="soal/pengaturan.json"></label>
+        <label style="grid-column:1/-1">Token GitHub<input id="gToken" type="password" autocomplete="off" placeholder="github_pat_…"></label>
+      </div>
+      <button class="btn b3" id="gSave">Simpan ke GitHub</button>
+      <div class="up">
+        <h3>Unggah file soal / kunci ke GitHub</h3>
+        <p class="warn">Nama file harus sesuai kode paket, mis. <b>LBIND-7.json</b>. Memakai repository dan token di atas.</p>
+        <div class="ctl">
+          <select id="uFolder" aria-label="Folder tujuan"><option value="soal/">Soal (folder soal/)</option><option value="kunci/">Kunci &amp; pembahasan (folder kunci/)</option></select>
+          <input type="file" id="uFile" accept=".json,application/json" multiple>
+          <button class="btn b2" id="uGo">Unggah</button>
+        </div>
+      </div>
+    </details>
+    <div class="msg" id="msg" role="status"></div>
+  </div>
+</main>
+
+<div id="dlg" hidden><div class="dlgb" role="dialog" aria-modal="true"><p id="dlgt"></p><div class="act"><button class="btn b2" id="dlgN">Batal</button><button class="btn bd" id="dlgY">Ya, hapus</button></div></div></div>
+
+<script>
+var GROUPS=[
+ {title:"TES POTENSI SKOLASTIK (TPS)",subjects:[
+   {title:"Penalaran Umum (PU)",code:"PU",n:7},
+   {title:"Pengetahuan & Pemahaman Umum (PPU)",code:"PPU",n:6},
+   {title:"Pemahaman Bacaan & Menulis (PBM)",code:"PBM",n:6},
+   {title:"Pengetahuan Kuantitatif (PK)",code:"PK",n:6}]},
+ {title:"LITERASI",subjects:[
+   {title:"Literasi Bahasa Indonesia",code:"LBIND",n:6},
+   {title:"Literasi Bahasa Inggris",code:"LBING",n:6}]},
+ {title:"PENALARAN MATEMATIKA",subjects:[
+   {title:"Penalaran Matematika (PM)",code:"PM",n:6}]},
+ {title:"SUPER TRYOUT",subjects:[
+   {title:"Super Tryout Solution (STS)",code:"TO",n:3}]}
+];
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+var CFG={aktif:null,info:{}},NOM={},labels=[];
+function jget(f){return fetch('soal/'+f,{cache:'no-cache'}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})}
+function isOn(k){return CFG.aktif===null||CFG.aktif.indexOf(k)>-1}
+
+function rowHtml(k,on,inf){
+  var d=parseInt(inf.durasi,10);
+  return '<div class="row" data-k="'+k+'"><label class="sw"><input type="checkbox" class="ck" aria-label="Aktifkan '+k+'"'+(on?' checked':'')+'><span class="tr"></span></label>'
+    +'<b class="lb">'+k+'</b><span class="st" id="st-'+k+'">Memeriksa file…</span>'
+    +'<input type="number" min="1" class="d" placeholder="menit" aria-label="Durasi menit '+k+'" value="'+(d>0?d:'')+'">'
+    +'<input type="text" class="t" maxlength="400" placeholder="Keterangan di cover (opsional)" aria-label="Keterangan '+k+'" value="'+esc(inf.keterangan||'')+'">'
+    +'<label class="rm"><input type="checkbox" class="dx" aria-label="Pilih '+k+' untuk dihapus">hapus</label></div>';
+}
+function numsFor(s,cfg){
+  var out=[],a=NOM[s.code];
+  if(Array.isArray(a)){
+    a.forEach(function(x){x=parseInt(x,10);if(x>0&&out.indexOf(x)<0)out.push(x)});
+    return out.sort(function(x,y){return x-y});
+  }
+  var n=parseInt(cfg[s.code],10);if(!(n>=0))n=s.n;
+  for(var i=1;i<=n;i++)out.push(i);
+  return out;
+}
+function build(cfg){
+  var h='';
+  GROUPS.forEach(function(g){
+    h+='<div class="grp">'+esc(g.title)+'</div>';
+    g.subjects.forEach(function(s){
+      var rows='';
+      numsFor(s,cfg).forEach(function(i){var k=s.code+'-'+i;rows+=rowHtml(k,isOn(k),CFG.info[k]||{})});
+      h+='<section class="sec" data-s="'+s.code+'"><div class="sh"><h2>'+esc(s.title)+'</h2><span class="cnt"></span>'
+        +'<button class="mini" data-act="add">+ Tambah paket</button><button class="mini" data-act="del">Hapus yang dicentang</button>'
+        +'<button class="mini" data-act="on">Semua aktif</button><button class="mini" data-act="off">Semua mati</button></div><div class="rows">'+rows+'</div></section>';
+    });
+  });
+  $('#list').innerHTML=h;
+  refresh();checkFiles();
+}
+function checkOne(k){
+  if(location.protocol==='file:'){var e0=$('#st-'+k);if(e0)e0.textContent='';return}
+  fetch('soal/'+encodeURIComponent(k)+'.json',{method:'HEAD',cache:'no-cache'}).then(function(r){
+    var e=$('#st-'+k);if(!e)return;
+    e.textContent=r.ok?'File soal ada':'Soal belum diunggah';e.className='st '+(r.ok?'y':'n');
+  }).catch(function(){var e=$('#st-'+k);if(e)e.textContent=''});
+}
+function checkFiles(){[].forEach.call(document.querySelectorAll('.row[data-k]'),function(r){checkOne(r.dataset.k)})}
+function addPkg(sec){
+  var rows=sec.querySelector('.rows'),mx=0;
+  [].forEach.call(rows.querySelectorAll('.row[data-k]'),function(r){var x=parseInt(r.dataset.k.split('-').pop(),10);if(x>mx)mx=x});
+  var k=sec.dataset.s+'-'+(mx+1);
+  rows.insertAdjacentHTML('beforeend',rowHtml(k,false,{}));
+  checkOne(k);refresh();
+  rows.lastElementChild.scrollIntoView({block:'nearest'});
+  msg(k+' ditambahkan (dalam keadaan mati). Unggah file soal-nya, nyalakan saklar, lalu simpan pengaturan.',true);
+}
+function delPkg(sec){
+  var ch=[].filter.call(sec.querySelectorAll('.row[data-k]'),function(r){return r.querySelector('.dx').checked});
+  if(!ch.length){msg('Centang dulu kotak "hapus" pada paket yang ingin dihapus, lalu klik Hapus yang dicentang.',false);return}
+  var names=ch.map(function(r){return r.dataset.k}).join(', ');
+  ask('Hapus dari daftar: '+names+'?\nFile soal dan kunci di repository tidak ikut terhapus.',function(){
+    ch.forEach(function(r){r.remove()});
+    refresh();
+    msg(names+' dihapus dari daftar. Klik Simpan agar berlaku di halaman siswa.',true);
+  });
+}
+function collect(){
+  var aktif=[],info={},nomor={};
+  [].forEach.call(document.querySelectorAll('.sec'),function(sec){nomor[sec.dataset.s]=[].map.call(sec.querySelectorAll('.row[data-k]'),function(r){return parseInt(r.dataset.k.split('-').pop(),10)}).sort(function(x,y){return x-y})});
+  [].forEach.call(document.querySelectorAll('.row[data-k]'),function(r){
+    var k=r.dataset.k;
+    if(r.querySelector('.ck').checked)aktif.push(k);
+    var d=parseInt(r.querySelector('.d').value,10),t=r.querySelector('.t').value.trim(),o={};
+    if(d>0)o.durasi=d;if(t)o.keterangan=t;
+    if(d>0||t)info[k]=o;
+  });
+  return {nomor:nomor,aktif:aktif,info:info};
+}
+var saved='';
+function refresh(){
+  var o=collect(),txt=JSON.stringify(o,null,2),total=document.querySelectorAll('.row[data-k]').length;
+  $('#json').value=txt;
+  $('#sum').innerHTML='Aktif: '+o.aktif.length+' dari '+total+' paket <span>'+(txt===saved?'':'· ada perubahan belum disimpan')+'</span>';
+  [].forEach.call(document.querySelectorAll('.row[data-k]'),function(r){r.classList.toggle('on',r.querySelector('.ck').checked);r.classList.toggle('del',r.querySelector('.dx').checked)});
+  [].forEach.call(document.querySelectorAll('.sec'),function(s){
+    var a=s.querySelectorAll('.ck:checked').length,t=s.querySelectorAll('.ck').length;
+    s.querySelector('.cnt').textContent=a+' dari '+t+' aktif';
+    var x=s.querySelectorAll('.dx:checked').length;
+    s.querySelector('[data-act="del"]').textContent='Hapus yang dicentang'+(x?' ('+x+')':'');
+  });
+}
+function msg(t,ok){var m=$('#msg');m.textContent=t;m.className='msg show '+(ok?'ok':'err');clearTimeout(window._mt);window._mt=setTimeout(function(){m.classList.remove('show')},ok?7000:11000)}
+$('#msg').onclick=function(){this.classList.remove('show')};
+function ask(text,yes){
+  $('#dlgt').textContent=text;$('#dlg').hidden=false;
+  $('#dlgY').onclick=function(){$('#dlg').hidden=true;yes()};
+  $('#dlgN').onclick=function(){$('#dlg').hidden=true};
+  $('#dlgN').focus();
+}
+function setAll(root,v){[].forEach.call(root.querySelectorAll('.ck'),function(c){c.checked=v});refresh()}
+
+$('#list').addEventListener('input',refresh);
+$('#list').addEventListener('change',refresh);
+$('#list').addEventListener('click',function(e){
+  var b=e.target.closest('.mini');if(!b)return;
+  var sec=b.closest('.sec'),act=b.dataset.act;
+  if(act==='add')addPkg(sec);else if(act==='del')delPkg(sec);else setAll(sec,act==='on');
+});
+$('#allOn').onclick=function(){setAll($('#list'),true)};
+$('#allOff').onclick=function(){setAll($('#list'),false)};
+$('#dl').onclick=function(){
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('#json').value],{type:'application/json'}));
+  a.download='pengaturan.json';document.body.appendChild(a);a.click();a.remove();
+  saved=$('#json').value;refresh();msg('File terunduh. Unggah ke repository sebagai soal/pengaturan.json agar berlaku.',true);
+};
+$('#cp').onclick=function(){
+  var ta=$('#json');ta.select();
+  function ok(){msg('JSON tersalin.',true)}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(ta.value).then(ok,function(){try{document.execCommand('copy');ok()}catch(x){msg('Gagal menyalin. Salin manual dari kotak.',false)}});
+  else{try{document.execCommand('copy');ok()}catch(x){msg('Gagal menyalin. Salin manual dari kotak.',false)}}
+};
+
+/* ---- Simpan langsung ke GitHub ---- */
+try{
+  $('#gOwner').value=localStorage.getItem('h2gOwner')||'';
+  $('#gRepo').value=localStorage.getItem('h2gRepo')||'';
+  $('#gBranch').value=localStorage.getItem('h2gBranch')||'main';
+  $('#gToken').value=sessionStorage.getItem('h2gToken')||'';
+}catch(e){}
+function b64(s){return btoa(unescape(encodeURIComponent(s)))}
+function gc(){
+  var o=$('#gOwner').value.trim(),r=$('#gRepo').value.trim(),br=$('#gBranch').value.trim()||'main',tk=$('#gToken').value.trim();
+  if(!o||!r||!tk){msg('Lengkapi pemilik, repository, dan token GitHub.',false);return null}
+  try{localStorage.setItem('h2gOwner',o);localStorage.setItem('h2gRepo',r);localStorage.setItem('h2gBranch',br);sessionStorage.setItem('h2gToken',tk)}catch(e){}
+  return {o:o,r:r,br:br,tk:tk};
+}
+function ghPut(c,path,text,message){
+  var url='https://api.github.com/repos/'+encodeURIComponent(c.o)+'/'+encodeURIComponent(c.r)+'/contents/'+path.split('/').map(encodeURIComponent).join('/');
+  var H={'Authorization':'Bearer '+c.tk,'Accept':'application/vnd.github+json'};
+  return fetch(url+'?ref='+encodeURIComponent(c.br),{headers:H}).then(function(res){
+    if(res.status===404)return null;
+    if(!res.ok)throw new Error('Gagal membaca repository ('+res.status+'). Periksa token, nama repo, dan branch.');
+    return res.json();
+  }).then(function(cur){
+    var body={message:message,content:b64(text),branch:c.br};
+    if(cur&&cur.sha)body.sha=cur.sha;
+    return fetch(url,{method:'PUT',headers:Object.assign({'Content-Type':'application/json'},H),body:JSON.stringify(body)});
+  }).then(function(res){
+    if(!res.ok)throw new Error('Gagal menyimpan '+path+' ('+res.status+'). Pastikan token punya izin menulis Contents.');
+  });
+}
+$('#gSave').onclick=function(){
+  var c=gc();if(!c)return;
+  var p=$('#gPath').value.trim().replace(/^\/+/,'')||'soal/pengaturan.json',content=$('#json').value,btn=this;
+  btn.disabled=true;msg('Menyimpan…',true);
+  ghPut(c,p,content,'Atur soal aktif tryout').then(function(){
+    saved=content;refresh();
+    msg('Tersimpan di GitHub. Perubahan tampil di halaman siswa setelah GitHub Pages selesai memperbarui (biasanya 1–2 menit).',true);
+  }).catch(function(e){msg(e.message||'Gagal menyimpan.',false)}).then(function(){btn.disabled=false});
+};
+$('#uGo').onclick=function(){
+  var c=gc();if(!c)return;
+  var files=[].slice.call($('#uFile').files),folder=$('#uFolder').value,btn=this;
+  if(!files.length){msg('Pilih file .json yang akan diunggah.',false);return}
+  for(var i=0;i<files.length;i++)if(!/^[A-Za-z]+-\d+\.json$/.test(files[i].name)){msg('Nama file "'+files[i].name+'" tidak sesuai. Gunakan format seperti LBIND-7.json.',false);return}
+  btn.disabled=true;msg('Mengunggah…',true);
+  var done=[],chain=Promise.resolve();
+  files.forEach(function(f){
+    chain=chain.then(function(){return f.text()}).then(function(t){
+      try{JSON.parse(t)}catch(x){throw new Error('Isi '+f.name+' bukan JSON yang valid.')}
+      return ghPut(c,folder+f.name,t,'Unggah '+folder+f.name).then(function(){done.push(f.name)});
+    });
+  });
+  chain.then(function(){
+    $('#uFile').value='';
+    msg('Berhasil diunggah ke '+folder+': '+done.join(', ')+'. Tampil setelah GitHub Pages memperbarui (1–2 menit).',true);
+  }).catch(function(e){
+    msg((done.length?'Terunggah: '+done.join(', ')+'. ':'')+(e.message||'Gagal mengunggah.'),false);
+  }).then(function(){btn.disabled=false});
+};
+
+window.addEventListener('beforeunload',function(e){if($('#json').value!==saved&&saved!==''){e.preventDefault();e.returnValue=''}});
+
+Promise.all([jget('daftar.json'),jget('pengaturan.json')]).then(function(r){
+  var p=r[1];
+  if(p&&Array.isArray(p.aktif))CFG.aktif=p.aktif.map(String);
+  if(p&&p.info&&typeof p.info==='object')CFG.info=p.info;
+  var cfg=(r[0]&&typeof r[0]==='object')?r[0]:{};
+  if(p&&p.jumlah&&typeof p.jumlah==='object')Object.keys(p.jumlah).forEach(function(k){cfg[k]=p.jumlah[k]});
+  if(p&&p.nomor&&typeof p.nomor==='object')NOM=p.nomor;
+  build(cfg);
+  saved=$('#json').value;refresh();
+});
+</script>
+</body>
+</html>

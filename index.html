@@ -157,6 +157,45 @@ button:focus-visible,.opt:focus-within{outline:3px solid var(--amber);outline-of
 .mb-kids{margin:0 0 6px 14px;padding-left:14px;border-left:2px solid var(--line)}
 .res-note ul{margin:6px 0 0;padding-left:20px}
 .rv-t{font-size:12px;color:var(--ink-soft);background:var(--white);border:1px solid var(--line);border-radius:99px;padding:2px 9px}
+.hbtn[hidden]{display:none}
+.nav-btn.off,.nav-btn:disabled{opacity:.45;cursor:not-allowed;border-style:dashed}
+.nav-btn.off:hover{border-color:var(--line)}
+.nav-btn small{font-size:10px}
+/* Cover */
+.cov{max-width:640px;margin:0 auto;padding:6px 0 10px}
+.cov-badge{display:inline-block;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;background:var(--cur-bg);color:var(--cur-t)}
+.cov-t{margin:12px 0 4px;font-size:clamp(22px,3vw,30px);color:var(--ink)}
+.cov-sub{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+.cov-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.cov-meta div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px;text-align:center}
+.cov-meta span{display:block;font-size:12px;color:var(--ink-soft);margin-bottom:2px}
+.cov-meta b{font-size:17px;color:var(--ink)}
+.cov-k{background:var(--sel-bg);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:0 0 16px;font-size:14.5px;line-height:1.7;white-space:pre-line}
+.cov-p{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:8px;padding:12px 16px;margin-bottom:20px;font-size:14px;line-height:1.7}
+.cov-p ul{margin:6px 0 0;padding-left:20px}
+.cov-l{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.cov-i{width:100%;font:inherit;font-size:16px;padding:12px 14px;border-radius:9px;border:1.5px solid var(--line);background:var(--white);color:var(--ink)}
+.cov-i:focus{outline:3px solid var(--amber);outline-offset:1px}
+.cov-e{color:#b3372f;font-size:13px;margin-top:6px}
+.cov-e[hidden]{display:none}
+.cov-go{width:100%;margin-top:18px;padding:14px;font-size:16px}
+.res-who{margin:0 0 12px;font-size:15px}
+/* Panel admin */
+#ov-b.wide{max-width:760px;max-height:90vh;display:flex;flex-direction:column}
+.ad-tools,.ad-act{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.ad-list{flex:1;overflow-y:auto;border:1px solid var(--line);border-radius:10px;padding:6px 12px;margin-bottom:10px;min-height:120px}
+.ad-h{font-size:12px;font-weight:700;color:var(--slate);margin:12px 0 4px}
+.ad-r{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.ad-r label{display:flex;align-items:center;gap:6px;width:92px;flex:none;font-size:14px;cursor:pointer}
+.ad-r input[type=checkbox]{width:18px;height:18px;accent-color:var(--slate)}
+.ad-d{width:74px;flex:none}.ad-t{flex:1;min-width:0}
+.ad-d,.ad-t{font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--ink)}
+#ad-json{width:100%;font:12px/1.4 Consolas,monospace;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);resize:vertical}
+@media (max-width:520px){.cov-meta{grid-template-columns:1fr}.ad-r{flex-wrap:wrap}.ad-t{flex-basis:100%}}
+/* paket terkunci */
+.nav-btn.off,.nav-btn.off:disabled{opacity:1;background:var(--paper-2);color:var(--ink-soft);border:1.5px dashed var(--ink-soft);cursor:not-allowed}
+.nav-btn.off:hover{border-color:var(--ink-soft)}
+.nav-btn .lock{width:13px;height:13px;vertical-align:-2px;margin-right:4px}
 </style>
 </head>
 <body>
@@ -175,8 +214,8 @@ button:focus-visible,.opt:focus-within{outline:3px solid var(--amber);outline-of
           <span><i style="background:var(--paper);border:1.5px solid var(--line)"></i>Belum dibuka</span>
           <span><i style="background:var(--seen-bg);border:1.5px solid var(--seen-bd)"></i>Sudah dibuka</span>
           <span><i style="background:var(--cur-bg)"></i>Sedang dibuka</span>
+          <span><i style="background:var(--paper-2);border:1.5px dashed var(--ink-soft)"></i>Terkunci</span>
         </div>
-        <div class="tools"><button class="tool" id="openAll">Buka semua</button><button class="tool" id="closeAll">Tutup semua</button></div>
         <div id="navgrid-group"></div>
       </div>
     </div>
@@ -229,11 +268,21 @@ var GROUPS=[
    {title:"Super Tryout Solution (STS)",code:"TO",n:3,gabungan:true}]}
 ];
 
+var LOCK='<svg class="lock" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.6" fill="currentColor" fill-opacity=".2"/><path d="M5.2 7V5a2.8 2.8 0 0 1 5.6 0v2"/></svg>';
 var CHEV='<svg class="chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4l6 6-6 6"/></svg>';
 var $=function(s){return document.querySelector(s)};
 var body=$('#body-wrap'),side=$('#navgrid-group'),card=$('#question-card');
-var items=[],cur=-1;
+var items=[],cur=-1,NOMOR={};
 var LET=['A','B','C','D','E'],st={},SOAL={},ERR={};
+/* Pengaturan dari soal/pengaturan.json:
+   {"nomor":{"LBIND":[1,2,3,4,5,6,7]},"aktif":["PU-1","TO-1"],"info":{"PU-1":{"durasi":60,"keterangan":"Materi ..."}}}
+   Jika file tidak ada / "aktif" tidak ditulis, semua paket dianggap aktif.
+   File ini disusun lewat halaman admin.html. */
+var CFG={aktif:null,info:{}},NAMA='';
+try{NAMA=localStorage.getItem('h2nama')||''}catch(e){}
+function isOn(k){return CFG.aktif===null||CFG.aktif.indexOf(k)>-1}
+function dur(it){var m=parseInt((CFG.info[it.label]||{}).durasi,10);return m>0?m*60:(it.to?TO_DURATION:DURATION)}
+function updSub(){var it=items[cur];if(it)$('#hdr-sub').textContent=it.label+' · '+(it.to?'Super Tryout':it.s.title)+(NAMA?' · '+NAMA:'')}
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 function isMobile(){return window.innerWidth<=680}
@@ -245,17 +294,20 @@ function buildMenu(cfg){
     var sec=el('div','nav-section');
     if(g.title)sec.appendChild(el('div','sec-title',esc(g.title)));
     g.subjects.forEach(function(s){
-      var jml=parseInt(cfg[s.code],10);
+      var nums=[],jml=parseInt(cfg[s.code],10);
       if(!(jml>=0))jml=s.n;
+      if(Array.isArray(NOMOR[s.code])){NOMOR[s.code].forEach(function(x){x=parseInt(x,10);if(x>0&&nums.indexOf(x)<0)nums.push(x)});nums.sort(function(a,b){return a-b})}
+      else for(var q=1;q<=jml;q++)nums.push(q);
       var box=el('div','subj open'),head=el('button','subj-head',CHEV+'<span>'+esc(s.title)+'</span>'),grid=el('div','nav-grid');
       head.setAttribute('aria-expanded','true');
       head.onclick=function(){head.setAttribute('aria-expanded',box.classList.toggle('open'))};
-      for(var n=1;n<=jml;n++)(function(label){
+      nums.forEach(function(n){(function(label){
         var b=el('button','nav-btn',label),i=items.length;
         items.push({label:label,s:s,g:g,btn:b,total:s.gabungan?TO_JUMLAH:0,to:!!s.gabungan});
-        b.onclick=function(){go(i)};
+        if(isOn(label))b.onclick=function(){go(i)};
+        else{b.classList.add('off');b.disabled=true;b.title=label+' terkunci (belum dibuka pengajar)';b.setAttribute('aria-label',label+' terkunci');b.innerHTML=LOCK+label}
         grid.appendChild(b);
-      })(s.code+'-'+n);
+      })(s.code+'-'+n)});
       box.appendChild(head);box.appendChild(grid);sec.appendChild(box);
     });
     side.appendChild(sec);
@@ -340,8 +392,9 @@ function paint(){
 function nbtn(n){return '<button class="nb" data-n="'+n+'" aria-label="Soal '+(n+1)+'">'+(n+1)+'</button>'}
 function render(){
   var it=items[cur],s=S(it),N=nq(it);
-  $('#footer-nav').style.display=s.done?'none':'';
+  $('#footer-nav').style.display=(s.done||!s.started)?'none':'';
   if(s.done){renderResult(it);return}
+  if(!s.started){renderCover(it);return}
   if(s.i>=N)s.i=N-1;
   var q=Q(it,s.i),nb='',j;
   nb='<div class="nav-q">';for(j=0;j<N;j++)nb+=nbtn(j);nb+='</div>';
@@ -355,12 +408,36 @@ function render(){
   paint();
   $('#main-scroll').scrollTop=0;
 }
+function renderCover(it){
+  var k=it.label,old=document.getElementById('nama');
+  if(old)NAMA=old.value;
+  var inf=CFG.info[k]||{},mins=Math.round(dur(it)/60),ket=inf.keterangan||'';
+  var jml=SOAL[k]?nq(it):(ERR[k]?'–':'memuat…');
+  card.innerHTML='<div class="cov"><span class="cov-badge">'+esc(k)+'</span><h2 class="cov-t">'+esc(it.s.title)+'</h2><div class="cov-sub">'+esc(TEST_TITLE)+'</div>'
+   +(ERR[k]?'<div class="q-warn">'+esc(Q(it,0).warn)+'</div>':'')
+   +'<div class="cov-meta"><div><span>Jumlah soal</span><b>'+jml+'</b></div><div><span>Waktu</span><b>'+mins+' menit</b></div><div><span>Paket</span><b>'+esc(k)+'</b></div></div>'
+   +(ket?'<p class="cov-k">'+esc(ket)+'</p>':'')
+   +'<div class="cov-p"><b>Petunjuk pengerjaan</b><ul><li>Waktu mulai berjalan setelah kamu menekan tombol Mulai.</li><li>Pilih satu jawaban tiap soal; gunakan "Tandai ragu-ragu" bila perlu kembali.</li><li>Ujian otomatis selesai saat waktu habis.</li><li>Skor dan pembahasan tampil setelah kamu menekan Selesai.</li></ul></div>'
+   +'<label class="cov-l" for="nama">Nama lengkap peserta</label><input id="nama" class="cov-i" type="text" maxlength="60" autocomplete="name" placeholder="Tulis nama lengkap kamu" value="'+escA(NAMA)+'">'
+   +'<div class="cov-e" id="nama-err" hidden>Isi nama dulu sebelum mulai.</div>'
+   +'<button class="btn btn-primary cov-go" id="start"'+(ERR[k]?' disabled':'')+'>Mulai Mengerjakan</button></div>';
+}
+function startExam(){
+  var inp=$('#nama'),nm=inp?inp.value.trim():'';
+  if(nm.length<2){$('#nama-err').hidden=false;inp.focus();return}
+  var it=items[cur];
+  if(!SOAL[it.label])return;
+  NAMA=nm;try{localStorage.setItem('h2nama',nm)}catch(e){}
+  S(it).started=true;lefts[it.label]=dur(it);
+  updSub();render();showT();
+}
 function go(i){
+  if(!isOn(items[i].label))return;
   cur=i;var it=items[i];
   items.forEach(function(x,k){x.btn.classList.toggle('current',k===i)});
   it.btn.classList.add('seen');
   var box=it.btn.closest('.subj');box.classList.add('open');box.querySelector('.subj-head').setAttribute('aria-expanded','true');
-  $('#hdr-sub').textContent=it.label+' · '+(it.to?'Super Tryout':it.s.title);
+  updSub();
   render();showT();
   loadSoal(it).then(function(){if(cur===i)render()});
   if(isMobile())closeMobile();
@@ -368,9 +445,11 @@ function go(i){
 card.addEventListener('click',function(e){
   var b=e.target.closest('.nb');
   if(b){S(items[cur]).i=+b.dataset.n;render();return}
+  if(e.target.closest('#start')){startExam();return}
   if(e.target.closest('#fin'))openSum();
   if(e.target.closest('#res-redo')){var k=items[cur].label;delete st[k];lefts[k]=null;render();showT()}
 });
+card.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.id==='nama')startExam()});
 card.addEventListener('change',function(e){
   if(e.target.name!=='o')return;
   if(S(items[cur]).done)return;
@@ -383,6 +462,7 @@ $('#btn-prev').onclick=function(){var s=S(items[cur]);if(s.i>0){s.i--;render()}}
 $('#btn-next').onclick=function(){var it=items[cur],s=S(it);if(s.i<nq(it)-1){s.i++;render()}};
 function openSum(){
   var it=items[cur],c=count(it,S(it));
+  $('#ov-b').className='';
   $('#ov-b').innerHTML='<h3>Ringkasan '+esc(it.label)+'</h3><p>Terjawab <b>'+c.d+'</b> · Ragu-ragu <b>'+c.f+'</b> · Belum dijawab <b>'+c.b+'</b></p><p class="note">Setelah menekan "Selesai", jawaban dikunci lalu skor dan pembahasan ditampilkan.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-ghost" id="ov-x">Kembali mengerjakan</button><button class="btn btn-primary" id="ov-fin">Selesai &amp; lihat skor</button></div>';
   $('#ov').hidden=false;$('#ov-x').focus();
 }
@@ -490,13 +570,14 @@ function renderResult(it){
   }
   var ttl=it.s.title+' – '+it.label;
   card.innerHTML='<div class="q-top"><span class="q-badge">'+esc(it.label)+'</span><h2 class="q-title">Hasil: '+esc(ttl)+'</h2></div>'
+    +'<p class="res-who">Peserta: <b>'+esc(NAMA)+'</b></p>'
     +head+'<div class="res-act"><button class="btn btn-ghost" id="res-redo">Kerjakan ulang</button></div>'
     +'<div class="res-list">'+rows+'</div>';
   $('#main-scroll').scrollTop=0;
 }
 var lefts={};
-function showT(){var it=items[cur];if(!it)return;var k=it.label;if(S(it).done){$('#timer').textContent='Selesai';return}if(lefts[k]==null)lefts[k]=it.to?TO_DURATION:DURATION;var l=lefts[k],h=Math.floor(l/3600),m=Math.floor(l%3600/60),x=l%60;$('#timer').textContent='Sisa waktu '+[h,m,x].map(function(v){return('0'+v).slice(-2)}).join(':')}
-function tickT(){var it=items[cur];if(!it)return;if(!S(it).done&&lefts[it.label]>0){lefts[it.label]--;if(lefts[it.label]===0){showT();finish(it);return}}showT()}
+function showT(){var it=items[cur];if(!it)return;var k=it.label;if(S(it).done){$('#timer').textContent='Selesai';return}if(!S(it).started){$('#timer').textContent='Waktu '+Math.round(dur(it)/60)+' menit';return}if(lefts[k]==null)lefts[k]=dur(it);var l=lefts[k],h=Math.floor(l/3600),m=Math.floor(l%3600/60),x=l%60;$('#timer').textContent='Sisa waktu '+[h,m,x].map(function(v){return('0'+v).slice(-2)}).join(':')}
+function tickT(){var it=items[cur];if(!it)return;if(!S(it).done&&S(it).started&&lefts[it.label]>0){lefts[it.label]--;if(lefts[it.label]===0){showT();finish(it);return}}showT()}
 setInterval(tickT,1000);
 
 var hiddenDesktop=false;
@@ -506,8 +587,6 @@ $('#hamburger').onclick=function(){
   else{hiddenDesktop=!hiddenDesktop;body.classList.toggle('sidebar-hidden',hiddenDesktop)}
 };
 $('#backdrop').onclick=closeMobile;
-$('#openAll').onclick=function(){[].forEach.call(document.querySelectorAll('.subj'),function(b){b.classList.add('open');b.firstChild.setAttribute('aria-expanded','true')})};
-$('#closeAll').onclick=function(){[].forEach.call(document.querySelectorAll('.subj'),function(b){b.classList.remove('open');b.firstChild.setAttribute('aria-expanded','false')})};
 $('#theme').onclick=function(){
   var r=document.documentElement,d=r.getAttribute('data-theme');
   var dark=d?d==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
@@ -517,14 +596,23 @@ $('#theme').onclick=function(){
 /* ---------- Mulai: baca daftar.json (jika ada), bangun menu, buka soal pertama ---------- */
 $('#hdr-title').textContent=TEST_TITLE;
 if(isMobile())body.classList.add('sidebar-hidden');
-fetch(SOAL_DIR+'daftar.json',{cache:'no-cache'})
-  .then(function(r){return r.ok?r.json():{}})
-  .catch(function(){return {}})
-  .then(function(cfg){
-    buildMenu(cfg&&typeof cfg==='object'?cfg:{});
-    if(items.length)go(0);
-    if(isMobile())body.classList.add('sidebar-hidden');
-  });
+function getJson(f){return fetch(SOAL_DIR+f,{cache:'no-cache'}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})}
+Promise.all([getJson('daftar.json'),getJson('pengaturan.json')]).then(function(r){
+  var cfg=r[0],p=r[1];
+  if(p&&Array.isArray(p.aktif))CFG.aktif=p.aktif.map(String);
+  if(p&&p.info&&typeof p.info==='object')CFG.info=p.info;
+  cfg=(cfg&&typeof cfg==='object')?cfg:{};
+  if(p&&p.nomor&&typeof p.nomor==='object')NOMOR=p.nomor;
+  if(p&&p.jumlah&&typeof p.jumlah==='object')Object.keys(p.jumlah).forEach(function(k){cfg[k]=p.jumlah[k]});
+  buildMenu(cfg);
+  var first=-1;items.forEach(function(x,i){if(first<0&&isOn(x.label))first=i});
+  if(first>=0)go(first);
+  else{
+    $('#footer-nav').style.display='none';$('#timer').textContent='';
+    card.innerHTML='<div class="cov"><h2 class="cov-t">Belum ada ujian yang dibuka</h2><p class="cov-k">Silakan tunggu informasi dari pengajar. Ujian akan muncul di menu kiri setelah diaktifkan.</p></div>';
+  }
+  if(isMobile())body.classList.add('sidebar-hidden');
+});
 </script>
 </body>
 </html>
