@@ -28,6 +28,9 @@ main{max-width:980px;margin:0 auto;padding:20px 16px 60px}
 .b3{background:var(--ok);color:#fff}
 @media (prefers-color-scheme:dark){.b1{background:var(--amber);color:#152b47}.b3{color:#0e1728}}
 .btn:disabled{opacity:.5;cursor:not-allowed}
+.live{flex-basis:100%;font-size:13.5px;font-weight:600;padding:9px 12px;border-radius:9px;border:1.5px solid var(--line);background:var(--white);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.live.ok{border-color:var(--ok);color:var(--ok)}.live.warn{border-color:var(--bad);color:var(--bad)}
+.live button{margin-left:auto}
 .grp{font-size:12px;font-weight:700;letter-spacing:.4px;color:var(--slate);margin:22px 0 8px}
 .sec{background:var(--white);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
 .sh{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--paper);border-bottom:1px solid var(--line);flex-wrap:wrap}
@@ -92,6 +95,7 @@ summary{cursor:pointer;font-weight:700;font-size:14px}
     <div class="sum" id="sum"></div>
     <button class="btn b2" id="allOn">Aktifkan semua</button>
     <button class="btn b2" id="allOff">Nonaktifkan semua</button>
+    <div class="live" id="live" role="status">Memeriksa pengaturan di situs siswa…</div>
   </div>
   <div id="list"><p>Memuat daftar…</p></div>
 
@@ -223,10 +227,29 @@ function collect(){
   });
   return {nomor:nomor,aktif:aktif,info:info};
 }
-var saved='';
+var saved='',LIVE=undefined;
+function checkLive(){
+  if(location.protocol==='file:'){LIVE=undefined;showLive();return Promise.resolve()}
+  return fetch('soal/pengaturan.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null}).then(function(d){LIVE=(d&&typeof d==='object')?d:null;showLive()});
+}
+function showLive(){
+  var e=$('#live');if(!e)return;
+  var btn=' <button class="mini" id="liveChk">Cek ulang</button>',cls='live',t;
+  if(location.protocol==='file:'){t='Halaman dibuka dari komputer (file://), status situs tidak bisa diperiksa. Buka lewat alamat GitHub Pages.'}
+  else if(LIVE===undefined){t='Memeriksa pengaturan di situs siswa…'}
+  else if(LIVE===null){cls+=' warn';t='⚠ File soal/pengaturan.json BELUM ada di situs siswa, jadi semua paket tampil terbuka tanpa gembok. Klik Simpan agar kunci berlaku.'}
+  else if(!Array.isArray(LIVE.aktif)){cls+=' warn';t='⚠ File pengaturan di situs tidak memuat daftar "aktif", jadi semua paket tampil terbuka.'}
+  else{
+    var cur=collect().aktif.slice().sort().join(','),lv=LIVE.aktif.map(String).sort().join(',');
+    if(cur===lv){cls+=' ok';t='✓ Pengaturan di situs siswa sama dengan yang di layar ('+LIVE.aktif.length+' paket aktif).'}
+    else{cls+=' warn';t='⚠ Situs siswa masih memakai pengaturan lama ('+LIVE.aktif.length+' paket aktif), berbeda dengan layar ini. Belum disimpan, atau GitHub Pages belum selesai memperbarui (1–2 menit).'}
+  }
+  e.className=cls;e.innerHTML='<span>'+t+'</span>'+btn;
+}
 function refresh(){
   var o=collect(),txt=JSON.stringify(o,null,2),total=document.querySelectorAll('.row[data-k]').length;
   $('#json').value=txt;
+  if(LIVE!==undefined)showLive();
   $('#sum').innerHTML='Aktif: '+o.aktif.length+' dari '+total+' paket <span>'+(txt===saved?'':'· ada perubahan belum disimpan')+'</span>';
   [].forEach.call(document.querySelectorAll('.row[data-k]'),function(r){r.classList.toggle('on',r.querySelector('.ck').checked);r.classList.toggle('del',r.querySelector('.dx').checked)});
   [].forEach.call(document.querySelectorAll('.sec'),function(s){
@@ -253,6 +276,7 @@ $('#list').addEventListener('click',function(e){
   var sec=b.closest('.sec'),act=b.dataset.act;
   if(act==='add')addPkg(sec);else if(act==='del')delPkg(sec);else setAll(sec,act==='on');
 });
+document.addEventListener('click',function(e){if(e.target.id==='liveChk'){LIVE=undefined;showLive();checkLive()}});
 $('#allOn').onclick=function(){setAll($('#list'),true)};
 $('#allOff').onclick=function(){setAll($('#list'),false)};
 $('#dl').onclick=function(){
@@ -301,7 +325,7 @@ $('#gSave').onclick=function(){
   var p=$('#gPath').value.trim().replace(/^\/+/,'')||'soal/pengaturan.json',content=$('#json').value,btn=this;
   btn.disabled=true;msg('Menyimpan…',true);
   ghPut(c,p,content,'Atur soal aktif tryout').then(function(){
-    saved=content;refresh();
+    saved=content;refresh();setTimeout(checkLive,20000);
     msg('Tersimpan di GitHub. Perubahan tampil di halaman siswa setelah GitHub Pages selesai memperbarui (biasanya 1–2 menit).',true);
   }).catch(function(e){msg(e.message||'Gagal menyimpan.',false)}).then(function(){btn.disabled=false});
 };
@@ -336,7 +360,7 @@ Promise.all([jget('daftar.json'),jget('pengaturan.json')]).then(function(r){
   if(p&&p.jumlah&&typeof p.jumlah==='object')Object.keys(p.jumlah).forEach(function(k){cfg[k]=p.jumlah[k]});
   if(p&&p.nomor&&typeof p.nomor==='object')NOM=p.nomor;
   build(cfg);
-  saved=$('#json').value;refresh();
+  saved=$('#json').value;refresh();checkLive();
 });
 </script>
 </body>
