@@ -596,7 +596,7 @@ $('#theme').onclick=function(){
 /* ---------- Mulai: baca daftar.json (jika ada), bangun menu, buka soal pertama ---------- */
 $('#hdr-title').textContent=TEST_TITLE;
 if(isMobile())body.classList.add('sidebar-hidden');
-function getJson(f){return fetch(SOAL_DIR+f,{cache:'no-cache'}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})}
+function getJson(f){return fetch(SOAL_DIR+f+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():{}}).catch(function(){return {}})}
 Promise.all([getJson('daftar.json'),getJson('pengaturan.json')]).then(function(r){
   var cfg=r[0],p=r[1];
   if(p&&Array.isArray(p.aktif))CFG.aktif=p.aktif.map(String);
