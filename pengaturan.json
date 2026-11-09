@@ -1,9 +1,0 @@
-{
-  "aktif": ["PU-1", "PPU-1", "PBM-1", "PK-1", "LBIND-1", "LBING-1", "PM-1"],
-  "info": {
-    "PU-1": {
-      "durasi": 90,
-      "keterangan": "Tryout Penalaran Umum paket 1."
-    }
-  }
-}
